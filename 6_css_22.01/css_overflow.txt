@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{  /* (2) */
+            border: 3px solid red;
+            width: 300px;
+            height: 70px;
+            margin-bottom: 90px;
+        }
+        #item1{ /*(4) */
+            overflow:visible;  /* visible dersek bir degisiklik olmaz, cunku visible zaten default deger*/
+        }
+        #item2{ /*(5)*/
+            overflow:hidden;
+        }
+        #item3{ /*(6)*/
+            overflow:scroll; /* goruldugu gibi scroll dendigi zaman altta x ekseninde kaydirmali ihtiyac olmayan scroll da acildi.*/
+        }
+        #item4{ /*(7)*/
+            overflow:auto;   /* ihtiyac varsa scroll koyuyor. scroll yaziildigindaki gibi ihtiyac olmayan sekilde scroll koymuyor.*/
+        }
+        #item5{ /*(8)*/
+            /* overflow-y:hidden; bunu hidden yaparsak sadece x e scroll verir. hic yazmayip overflow-x e scrool verirsekte yine ayni sonuc olacaktir */
+             /*overflow-x: scroll;(11) yorum haline getirip auto degeri verdik*/ 
+             overflow:auto
+
+        }
+        #parag5{ /* (10) width verdik boylece y ekseninde descroll cikt.*/
+            width: 1000px; 
+        }
+    </style>
+</head>
+<body> 
+    <!-- (1) -->
+    <!-- (3) istersek birden fazla class verebilirz; class="box item1 parag1 vsvs"  -->
+    <div class="box"  id="item1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quidem non numquam aspernatur fuga ab eaque esse quasi veritatis, quas est fugiat nesciunt maxime expedita ipsum vero? Esse, in illo?
+    </div>
+    <div class="box" id="item2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quidem non numquam aspernatur fuga ab eaque esse quasi veritatis, quas est fugiat nesciunt maxime expedita ipsum vero? Esse, in illo?
+    </div>
+    <div class="box" id="item3">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quidem non numquam aspernatur fuga ab eaque esse quasi veritatis, quas est fugiat nesciunt maxime expedita ipsum vero? Esse, in illo?
+    </div>
+    <div class="box" id="item4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quidem non numquam aspernatur fuga ab eaque esse quasi veritatis, quas est fugiat nesciunt maxime expedita ipsum vero? Esse, in illo?
+    </div>
+    <!-- (9) item5i <p> tagi icine aldik ve id verdik -->
+    <div class="box " id="item5">
+        <p id="parag5">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis quidem non numquam aspernatur fuga ab eaque esse quasi veritatis, quas est fugiat nesciunt maxime expedita ipsum vero? Esse, in illo?
+        </p>
+    </div>
+</body>
+</html>

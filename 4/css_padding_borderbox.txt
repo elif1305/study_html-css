@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css_Padding</title>
+
+    <style>
+        #first{
+            background-color: coral;  
+            /* coklu satirda yazilisi: */
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 30px;
+            padding-bottom: 40px; 
+            margin: 50px;
+        }
+
+        /* margin degeri verilmedigi zaman browsein otomatik olarak verdigi margin degeri olablir. */
+
+
+        #second{
+           background-color: aqua; 
+        }
+
+
+        #content1{
+            box-sizing: content-box;
+            background-color: deeppink;
+            padding: 20px;
+            border: 5px solid olivedrab;
+            height: 50px;
+        }
+
+        #content2{
+            box-sizing: border-box;
+            background-color: gold;
+            padding: 20px;
+            border: 5px solid red;
+            height: 50px;
+        }
+
+        /* inceleden kutu modelini incele aradaki deger farkini oradan goreceksin */
+
+    </style>
+
+</head>
+<body>
+
+     <!-- icten disa dogru :
+    content >padding > border > margin  
+    margin: iki content box arasi mesafe
+    padding: content in box icindeki araligi
+    -->
+    
+    <h1>Padding</h1>
+    <p id="first">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, sed magnam. Incidunt dignissimos nam reiciendis.
+    </p>
+
+    <p id="second">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore at voluptatem asperiores id, vero praesentium eaque temporibus reiciendis libero vitae?
+    </p>
+
+    <h1>Box Sizing</h1>
+
+    <!-- box sizing e  biz genelde border-box veryioruz -->
+
+    <h3>Content Box</h3>
+
+<!-- kdv dahil degil diyebliriz  -->
+<!-- default deger Contentbox tir. -->
+<!-- Padding ile ilgilidir.(margini eklemez) -->
+<!-- ornek:
+Content width : 200px
+Pading: 200pxbox-sizig: content box
+
+total width: 200+2(20)= 240
+content width : 200px -->
+<p id="content1">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, omnis sit voluptates fugiat nostrum ex eligendi harum similique aperiam sint et illum, nihil illo minima ipsa perferendis facere exercitationem! Tempora.
+</p>
+   
+
+    <img src="./images1.jpg" alt="Space">
+
+<br><br><br>
+
+    
+
+    <h3>Border Box</h3>
+<p id="content2">
+ <!-- kdv dahil diyebliriz  -->
+ <!-- Padding ile ilgilidir.(margini eklemez) border i ekler. -->
+ <!-- ornek:
+Content width : 200px
+Pading: 200pxbox-sizig: content box
+
+total width: 200-2(20)= 160
+content width : 160px -->  
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae iure magni aut dolorem nostrum provident aliquam fugiat assumenda eos cumque voluptatem delectus, qui consequatur voluptate minus ad. Sunt, reprehenderit.
+
+</p>
+
+<img src="./imagw2.jpg" alt="Space" width="300px">
+
+</body>
+</html>

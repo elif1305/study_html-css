@@ -1,0 +1,380 @@
+###   HTML FORMS  ###
+
+<body>
+    <form action="">
+        <h1> Sizi taniyalim </h1>
+        <!-- input text password -->
+        <div>
+            <label for="ad">AD:</label>
+            <input type="text" name="username" id="ad" placeholder="Adinizi giriniz">
+
+        </div>
+
+    </form>
+
+</body>
+
+buradaki label ve inputu birbirine baglamamiz gerekir. bunu da id ile veya name ile yapabliriz. biz burda id ile yaptik.
+
+
+
+
+
+
+
+TUM KOD:
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element</title>
+</head>
+<body>
+
+    <!-- burada action icine bir dosyayi yaziyoruz.form doldurultan sonra subnit dedigimiz zaman ekranda sonucu gosteriyor -->
+
+    <form action="">
+        <h1> Sizi taniyalim </h1>
+        <!-- input text password -->
+        <div>
+            <!-- buradaki label ve inputu birbirine baglamamiz gerekir. bunu da id ile veya name ile yapabliriz. biz burda id ile yaptik. -->
+
+            <!-- burada label kullanilmasa olur,kullanmadaki amac kutucuk ile arasinda baglanti olusturmak, bu nedenle onemli  -->
+
+            <label for="ad">AD:</label>
+            <input type="text" name="username" id="ad" placeholder="Adinizi giriniz">
+            <!-- kopyala yapistir ile cogalttik -->
+            <br><br>
+            <label for="soyad">SOYAD:</label>
+            <input type="text" name="username" id="soyad" placeholder="Soyadinizi giriniz">
+            <br><br>
+            <label for="sifre">SIFRE:</label>
+            <input type="password" name="username" id="sifre" placeholder="sifrenizi giriniz">
+
+            <hr>
+            <!-- burada div i sadece duzenli olsun diye kullandik -->
+        </div>
+
+        <!-- Radio button -->
+        <div>
+            <label for=""> CINSIYET: </label>
+            <br>
+
+            <input type="radio" name="cinsiyet" id="gender1" value="erkek">
+            <label for="gender1">erkek</label>
+
+            <!-- id ve for u birbirine bagliyoruz. id adini forun icine yazarak -->
+
+            <input type="radio" name="cinsiyet" id="gender2" value="kadin">
+            <label for="gender2">kadin</label>
+
+            <br>
+
+            <!-- once yzi sonra secim kutusu gelsin istiyorsan labeli uste tasi, ornek asagida -->
+
+            <label for="gender2">kadin</label>
+            <input type="radio" name="cinsiyet" id="gender2">
+            
+            <label for="gender1">erkek</label>
+            <input type="radio" name="cinsiyet" id="gender1">
+            
+
+        </div>
+
+          <!-- Checkbox  -->
+
+        <div>
+
+            <h4> En sevdiginiz hayvanlar </h4>
+
+            <input type="checkbox" name="animal" id="panda" value="panda">
+            
+            <!-- VALUE VERME ZORUNLULUGUMUZ YOK, ID ILE BAGLANDI. FAKAT ISTIYRSAK VEREBLIRIZ -->
+
+            <label for="panda">Panda</label>
+
+            <br>
+
+            <input type="checkbox" name="animal" id="aslan" value="aslan">
+            <label for="panda">Aslan</label>
+
+            <br>
+
+            <input type="checkbox" name="animal" id="penguen" value="penguen">
+            <label for="panda">Penguen</label>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div>
+            <label for="yas">Yas</label>
+            <input type="number" name="age" id="yas" min=7 max=70>
+
+            <!-- burada istersek min max degerler verebliriz -->
+
+        </div>
+<br>
+        <div>
+            <label for="ara">Kitap ara</label>
+            <input type="search" name="search" id="ara" placeholder="Aranacak kelimeyi girin..">
+        </div>
+<br>
+        <div>
+            <label>Sevdiginiz renk</label>
+            <input type="color" name="color" id="renk">
+        </div>
+<br>
+        <div>
+            <label for="eposta">Email:</label>
+            <input type="email" name="email" id="eposta" placeholder="example@example.com" required >
+
+            <!-- email bizim icin cok onemli diyelim, o zman sonuna required diye ekliyoruz. -->
+        </div>
+<br>
+        <div>
+            <label for="dosya">Profil Fotografi:</label>
+            <input type="file" name="file" id="dosya" multiple>
+        <!-- sonuna multiple eklersek 'choose fileS' olur, yani 1den fazla dosya sectirmek icin 
+        -->
+
+        </div>
+<br>
+        <div>
+            <label for="tel">Telefin No:</label>
+            <input type="tel" name="phone" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" placeholder="xxx-xxx-xx">
+
+            <!-- pattern ile nasil formatta numara girilmesini istedigimizi belirledik. [0-9] bu 0-9 arasi rakamlari kullansin, ve {2} ve ya {3} veya {n} de kac tane yazabilecegini belirtmek icin. -->
+
+        </div>
+
+        <div>
+        <!-- select i birden fazla secenek vermek istedigimiz zaman kullaniyoruz. -->
+        
+        <label for="">Hangi tatliyi seversiniz?:</label>
+        <select name="" id="">
+            <option value="sutlac">sutlac</option>
+            <option value="baklava">balava</option>
+            <option value="kadayif">kadayif</option>
+        </select>
+
+        </div>
+
+        <div>
+            <label for="dogum">Dogum tarihini giriniz:</label>
+            <input type="date" name="date" id="dogum" min="2020-04-20" max="2025-05-20" value="2021-05-13">
+        </div>
+
+        <input type="reset" value="Temizle">
+        <!-- burada value degeri istege bagli. yazmazsak default olarak reset yazar. -->
+
+        <input type="submit">
+
+
+    </form>
+
+
+
+
+</body>
+</html>
+
+
+
+
+####     CSS KISMI           ####
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element</title>
+
+    <style>
+        #userinfo{
+            /* background-color: green; yada rgb */
+
+            background-color: rgb(0, 150, 250);
+
+            /* rgb yazarak bizde rakam girerek belirleyebliriz */
+        }
+        #genderinfo{
+            background-color: salmon;
+            /* border-width: 5px;
+            border-style: solid;
+            border-color: slateblue; ## kisa sekli asagida ## */
+
+            border:5px groove darkgoldenrod ;
+            border-radius: 30px;
+            border-top:150px rgb(255, 0, 0);
+            
+        }
+
+        #ara{
+            background-color: rgb(8, 245, 0);
+          
+        }
+        
+    </style>
+
+</head>
+<body>
+
+    <!-- burada action icine bir dosyayi yaziyoruz.form doldurultan sonra subnit dedigimiz zaman ekranda sonucu gosteriyor -->
+
+    <form action="">
+        <h1> Sizi taniyalim </h1>
+        <!-- input text password -->
+        <div id="userinfo">
+
+            <!-- id verdik userinfo diye. yukarda head icindeki style icinde css ozellikleri vermek icin. -->
+
+            <!-- buradaki label ve inputu birbirine baglamamiz gerekir. bunu da id ile veya name ile yapabliriz. biz burda id ile yaptik. -->
+
+            <!-- burada label kullanilmasa olur,kullanmadaki amac kutucuk ile arasinda baglanti olusturmak, bu nedenle onemli  -->
+
+            <label for="ad">AD:</label>
+            <input type="text" name="username" id="ad" placeholder="Adinizi giriniz">
+            <!-- kopyala yapistir ile cogalttik -->
+            <br><br>
+            <label for="soyad">SOYAD:</label>
+            <input type="text" name="username" id="soyad" placeholder="Soyadinizi giriniz">
+            <br><br>
+            <label for="sifre">SIFRE:</label>
+            <input type="password" name="username" id="sifre" placeholder="sifrenizi giriniz">
+
+          
+            <!-- burada div i sadece duzenli olsun diye kullandik -->
+        </div>
+
+        <!-- Radio button -->
+        <div id="genderinfo">
+            <label for=""> CINSIYET: </label>
+            <br>
+
+            <input type="radio" name="cinsiyet" id="gender1" value="erkek">
+            <label for="gender1">erkek</label>
+
+            <!-- id ve for u birbirine bagliyoruz. id adini forun icine yazarak -->
+
+            <input type="radio" name="cinsiyet" id="gender2" value="kadin">
+            <label for="gender2">kadin</label>
+
+            <br>
+
+            <!-- once yzi sonra secim kutusu gelsin istiyorsan labeli uste tasi, ornek asagida -->
+
+            <label for="gender2">kadin</label>
+            <input type="radio" name="cinsiyet" id="gender2">
+            
+            <label for="gender1">erkek</label>
+            <input type="radio" name="cinsiyet" id="gender1">
+            
+
+        </div>
+
+          <!-- Checkbox  -->
+
+        <div>
+
+            <h4> En sevdiginiz hayvanlar </h4>
+
+            <input type="checkbox" name="animal" id="panda" value="panda">
+            
+            <!-- VALUE VERME ZORUNLULUGUMUZ YOK, ID ILE BAGLANDI. FAKAT ISTIYRSAK VEREBLIRIZ -->
+
+            <label for="panda">Panda</label>
+
+            <br>
+
+            <input type="checkbox" name="animal" id="aslan" value="aslan">
+            <label for="panda">Aslan</label>
+
+            <br>
+
+            <input type="checkbox" name="animal" id="penguen" value="penguen">
+            <label for="panda">Penguen</label>
+
+        </div>
+
+        <br>
+        <hr>
+
+        <div>
+            <label for="yas">Yas</label>
+            <input type="number" name="age" id="yas" min=7 max=70>
+
+            <!-- burada istersek min max degerler verebliriz -->
+
+        </div>
+<br>
+        <div>
+            <label for="ara">Kitap ara</label>
+            <input type="search" name="search" id="ara" placeholder="Aranacak kelimeyi girin..">
+        </div>
+<br>
+        <div>
+            <label>Sevdiginiz renk</label>
+            <input type="color" name="color" id="renk">
+        </div>
+<br>
+        <div>
+            <label for="eposta">Email:</label>
+            <input type="email" name="email" id="eposta" placeholder="example@example.com" required >
+
+            <!-- email bizim icin cok onemli diyelim, o zman sonuna required diye ekliyoruz. -->
+        </div>
+<br>
+        <div>
+            <label for="dosya">Profil Fotografi:</label>
+            <input type="file" name="file" id="dosya" multiple>
+        <!-- sonuna multiple eklersek 'choose fileS' olur, yani 1den fazla dosya sectirmek icin 
+        -->
+
+        </div>
+<br>
+        <div>
+            <label for="tel">Telefin No:</label>
+            <input type="tel" name="phone" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" placeholder="xxx-xxx-xx">
+
+            <!-- pattern ile nasil formatta numara girilmesini istedigimizi belirledik. [0-9] bu 0-9 arasi rakamlari kullansin, ve {2} ve ya {3} veya {n} de kac tane yazabilecegini belirtmek icin. -->
+
+        </div>
+
+        <div>
+        <!-- select i birden fazla secenek vermek istedigimiz zaman kullaniyoruz. -->
+        
+        <label for="">Hangi tatliyi seversiniz?:</label>
+        <select name="" id="">
+            <option value="sutlac">sutlac</option>
+            <option value="baklava">balava</option>
+            <option value="kadayif">kadayif</option>
+        </select>
+
+        </div>
+
+        <div>
+            <label for="dogum">Dogum tarihini giriniz:</label>
+            <input type="date" name="date" id="dogum" min="2020-04-20" max="2025-05-20" value="2021-05-13">
+        </div>
+
+        <input type="reset" value="Temizle">
+        <!-- burada value degeri istege bagli. yazmazsak default olarak reset yazar. -->
+
+        <input type="submit">
+
+
+    </form>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <style>
+        /* (2) */
+        h1{
+            background-color: chocolate;
+             /* position: fixed; sayfayi yandan kaydirsakta bu baslik sabit kaliyor*/
+            
+            position: sticky; /*konum belirtmek gerekiyor*/
+            top: 30px; /*bu konumda fixed olur*/
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+    <!-- (1) -->
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed doloremque recusandae eveniet dolore fugiat voluptas omnis voluptatem, excepturi maxime odio aspernatur laborum corrupti, nam praesentium eius nihil? Minima, quam quis!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veniam iure odit facilis expedita fugit, animi nisi deserunt nesciunt itaque?
+    </p>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

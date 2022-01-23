@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+
+<!-- 
+    Sirasi ile;
+    font-family 
+    font-color
+    font-style
+    font- sıze rem-em
+    font-weight
+    font-variant 
+    --> 
+    <style>
+        /*  butun sayfayı kapsayacak işlemler ıcın * ısaretını basa kooyup yapabilirz.*/
+
+        *{
+            font-size: 10px;
+        }
+
+
+        /*font family icin otomatik olanlardan birnide secebilrisn ya da sende yazabilirsin. once ilk bastakine bakacak yoksa sirayla olani bulana kadar devam eder. her browser butun fontlari desteklemedigi icin boyle yapiyoruz */ 
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: yellow;
+            font-style: oblique;
+
+            /* google font > 
+            istedigin fonta tıkla > 
+            select this style a tıkla > 
+            sag tarafta cıkan linkı kopyala html de head kısmına yapıştır >
+            css ıcınde font family yazısını kopyala html de kullanmak ıstedıgın (p tagı gıbı) yere yapıştır.  */
+        /* font ninja : google chrome uzantısı , ıstedıgmız sayfanın fontunu bulmak ıcın eklentı. chroma kur.  */
+            
+            /*font-size: 40px;*/
+
+            /* font sıze ıcın ısterske burada yuklu olanlarnda bırını de seceblılırz*/
+            /* font-size: 3rem;*/
+
+            /* 1 rem browserın default degerı olan = 16 px e denk geliyor
+            yani biz font size a 3rem dersek 16x3 yapacak yani 48 px*/
+
+            /* birde em diye birsey var.yukarda * altında font sıze ı 10 px olarak belırledıgımız ıcın em burada 10 olacak sonuc 30 olacak*/
+            font-size: 3em;
+            font-weight: 800;
+            /* font-weight: e 900e kadar deger verebiliyoruz. */
+            font-variant: small-caps;
+            
+            
+        }
+
+
+        p{
+            font-family: 'Dongle', sans-serif;
+            font-style: oblique;
+            /* ablıque yana yatmaya zorlar .destekteklenmeyen browserlarda*/
+        }
+
+        h3{
+            font-family: 'Rubik Beastly', cursive;
+        }
+
+        /*
+        a : link
+        a: visited
+        a: hover
+        a:active
+      */
+        a:link{
+            color: tomato;
+        }
+
+        a:visited{
+             color: yellow;
+        }
+        a:hover{
+            color: olivedrab;
+        }
+
+        a:active{
+            color: royalblue;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ut. Earum hic illo corporis delectus, sapiente quo labore veritatis maiores.
+    </p>
+    <h3>Lorem, ipsum.</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ut. Earum hic illo corporis delectus, sapiente quo labore veritatis maiores.
+    </p>
+    <h3>Lorem, ipsum dolor.</h3>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil velit asperiores recusandae maxime laudantium? Suscipit culpa ipsum commodi aperiam voluptates neque repellendus deleniti ad vitae!
+    </p>
+    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aut voluptas minima repellat earum dolor vero, eius repellendus commodi! Asperiores saepe doloremque soluta cum neque adipisci possimus ratione laboriosam! Minus!
+    </p>
+    <h3>Lorem ipsum dolor sit.</h3>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, rerum.
+    </p>
+
+
+   <p><h3>link durumlari</h3></p> 
+
+    <a href="https://www.youtube.com/" target="_blank">watch more</a>
+
+<!-- margin top a -100 gibi eksi deger verirsen yazi ustteki resmin ustune dogru cikar. "(derste yapilan pizza ornegi)" -->
+
+
+</body>
+</html>

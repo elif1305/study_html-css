@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Color</title>
+
+    <style>
+        h1{
+            /* color:rgb(300, 200, 10) seklinde tek satir olarakta yazilabilr*/
+            color: seagreen;
+            /* text-decoration: underline; altıcizili
+            overline : ustucızılı
+            line-trought : ustu cizili*/
+            text-decoration: underline;
+            text-decoration-style: dotted;
+            /* text decoration style: cizgilerin nasil olacagı ile ilgili */
+            text-decoration-color: tomato;
+            /* tek satırda vermek icin: 
+            text-decoration: blue underline overline wavy yazabiliriz */
+            text-decoration: blue underline overline wavy;
+             /* text-transform: lowercase;
+             kucuk harf yazmak ıcın lowercase,
+             buyuk harf ıcın uppercase,
+             basharf buyuk ıcın capitalize */
+             text-transform: lowercase;
+             text-align: center;
+             word-spacing: 15px;
+             letter-spacing: 10px;
+        }
+
+        p{
+            text-indent: 25px;
+        }
+
+        h3{
+            direction:rtl ;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>TEXT FORMATİNG</h1>
+
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo explicabo, odio facilis quasi, doloribus adipisci id assumenda illo nisi et ratione aspernatur ut nobis suscipit. Dolore, esse amet? Magni, fuga.
+    </p>    
+
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus nulla est aut excepturi tempore ducimus nemo ut aperiam cumque, doloribus quidem cupiditate soluta molestias!
+    </p>
+
+    <p>
+        <h3> Written by Ella</h3> 
+    </p>
+
+
+
+</body>
+</html>

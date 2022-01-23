@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web page with float</title>
+    <style>
+        *{ /*(14)*/
+            box-sizing: border-box;
+            
+        }
+        header{ /*(5)*/
+            background-color: springgreen;
+            border: 1px solid black;
+        }
+        main{ /*(6)*/
+            background-color: purple;
+            padding: 20px;
+            border: 1px solid black;
+           /* height: 500px; (17) 1. cozum height a 500px vererek sorunu cozebiliriz.*/
+           /*(22)*/
+           /*overflow:auto 3.cozum yolu (23) yoruma alindi*/
+        }
+        aside{ /*(7)*/
+            background-color: royalblue;
+            border: 1px solid black;
+            width: 25%; /*(13)*/
+            float: left; /*(12)*/
+            height: 300px; /*(16)*/
+        }
+        article{ /*(8)*/
+            background-color: salmon;
+            border: 1px solid black;
+            width: 70%; /*(10)*/
+            float: right; /*(11)*/
+            height: 300px; /*(15)*/
+        }
+        footer{/*(9)*/
+            background-color: violet;
+            border: 1px solid black;
+        }
+        /*.clear{ (19) 2. cozumun devami (20)yoruma cevrildi
+            clear:both
+        } */
+        /*(25) 4.cozum*/
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- (1) -->
+    <header>HEADER</header>
+    <!-- (2) -->
+    <!-- (24) main e class verildi=clearfox -->
+    <main clear="clearfix">
+        <aside>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam laboriosam 
+        </aside>
+        <!-- (3) -->
+        <article>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere eveniet, magni eaque repudiandae magnam consequuntur officiis nobis quo dolores voluptatem temporibus deserunt maiores aperiam quas, repellendus quibusdam iure in. Reprehenderit labore maiores nulla porro id perspiciatis tenetur consectetur, illum at voluptate, dolorem, molestias atque magnam cumque sunt fuga qui exercitationem.
+        </article>
+        <!-- <div class="clear"> 
+              (18) 2. cozum icin div olusutup class verdik 
+           (21) yoruma cevrildi.
+        </div> -->
+    </main>
+
+    <!-- (4) -->
+    <footer>
+        WEBPAGE WITH FLOAT CLARUS
+    </footer>
+</body>
+</html>

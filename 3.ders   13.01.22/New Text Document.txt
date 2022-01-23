@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- action in icine results.html i koy. hocanin gondwerdigi -->
+    <form action="" method="GET" name="myform">
+    <div>
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars" size="8" multiple>
+
+        <!-- -- buraya size=3 yazilmasinin nedeni ciktida bakarken 3 secenegi gostermesi icin , multiple yazilirsa birden fazla secenek secmek icin-, REQUIRED da yazilirsa doldurulmasi zorunlu alan olarak gorur -->
+
+        <!-- Selected yazilirsa bir tanesi zorunlu secili olarak gelir. boylece kullanici birini zorunlu olarak secmek zorunda gelir. required yazmaya gerek kalmaz. -->
+            <optgroup label="Expensivecar">
+                <option value="Porche" selected>Porche</option>
+                <option value="Masserate">Masserate</option>
+                <option value="Lambur">Lambur</option>
+            </optgroup>
+    <!-- optgroup alt grup vermek icin  -->
+            <optgroup label="oldbutgold">
+                <option value="Kartal">Kartal</option>
+                <option value="Murat131">Murat131</option>
+                <option value="Yaris">yaris</option>
+           </optgroup>
+        </select>
+    </div>
+
+    <!-- Ne icin <div> </div> icine aliyoruz? toplu olarak o grubu hareket ettireilmek icin. ozellilikle css de . -->
+
+    <br><br><br>
+
+    <div>
+        <label for="message">Enter your comment here : </label>
+        <br>
+        <textarea name="comment" id="message" cols="30" rows="10" placeholder="Enter your comment here" maxlength="9"
+        style="resize: none;"
+        ></textarea>
+        <!-- 
+            istersek cols and rows yerine style+"width:200px; height:255px" yazabiliriz
+
+            style="resize: none  dersek sol alt kosede cikan olceklendirme gider 
+            
+            maxlengthe en fazla 10 yazilabliyor,sinirlandirma yapmak istemiyorsak maxlenghte gerek yok  -->
+    </div>
+
+    <div>
+        <label for="mybrowser">Browser :</label>
+        <br>
+        <input type="text" name="browser-option" id="mybrowser" list="browsers">  
+        <!-- datalistin id si ile listin id sinin ayni olmasi lazim -->
+        <datalist id="browsers">
+            <option value="Chrome">Chrome</option>
+            <option value="Safari">Safari</option>
+            <option value="Brave">Brave</option>
+            <option value="Mozilla">Mozilla</option>
+        </datalist>
+    </div>
+
+    <!-- select ve datalistin farki : 
+    1- datalistte arama yerine bulmak istedgimizin ilk harfleriniyazip kolayca bulabliriz
+    2- kendimiz listede olmayan bise yazabiliriz 
+    3- Datalistte multiple secim yok, select te var
+    -->
+        <br><br>
+        <input type="submit" value="SEND">
+<br><br><br>
+        <!-- field sarmalama yapmak icin. legend ile isim veriliyor -->
+    <fieldset style="width: 50%;">
+        <legend>Personel Info : </legend>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="" id="firstname" placeholder="Ella">
+<br>
+        <label for="lastname">Last Name : </label>
+        <input type="text" name="" id="lastname" placeholder="Jhonson" >
+    </fieldset>
+
+    <br><br><br>
+
+<!-- Semantic elementler : slayttan bak -->
+
+<!-- box sizing
+
+widthxheight > padding > border > margin
+
+-->
+
+    </form>
+</body>
+</html>

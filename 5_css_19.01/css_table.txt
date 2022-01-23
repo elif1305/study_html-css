@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+        /* (4) */
+        caption{
+            font-weight: 600;
+            margin-bottom: 10px;
+            border: 2px solid black;
+        }
+        /* (5) burada sadece tablein etrafina ekler.Ama table in yanina th , td ye de cerceve ekler. (defaault olarak neden cift cizgi seklinde border eklediginin aciklamasidir bu)
+
+        table{
+            border: 2px solid green;
+        } */
+
+        /* (6) cift cizgilik gitsin istiyorsak : border-collapse: collapse ozelligini kullaniriz. */
+        table, th, td{
+            border: 2px solid tomato;
+            border-collapse: collapse;
+        }
+        /* (7) */
+        table{
+            width: 100%;
+        }
+        /* (8) */
+        th{
+            height: 30px;
+            vertical-align: bottom ; /*yazinin yatayda hareketi icin*/
+            padding: 10px;
+            background-color: cornflowerblue;
+        }
+        /* (9) */
+        td{
+            height: 25px;
+            padding: 5px;
+            text-align: center ;
+            /* background-color: darksalmon; zebra deseni kodu calissin diye yorum drumuna getirildi */
+            color: gold; /* yazi rengi*/
+        }
+        /* (10) mause uzerine gediginde rengi degisir*/
+        td:hover{
+           background-color: chartreuse; 
+        }
+        /* 
+        (11)
+        ayni islem tr icinde calisir. fakat backgraund rengini kaldirmak gerekiyor. yoksa hover i arka plana atiyor.
+        tr:hover{
+           background-color: chartreuse; 
+        } */
+
+        /*(12)
+        zebra deseni vermek icin:
+        tr:nth-child(buraya even ya da odd yaz ya da istedigin tek satirin numarasini da yazablirsin) 
+        ornegin : 
+        tr:nth-child(6){
+            background-color: cyan;
+        }
+        */
+        tr:nth-child(even){
+            background-color: cyan;
+        }
+
+        /* (13) */
+        tr:nth-child(odd){
+            background-color: rebeccapurple;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <table>
+        <!-- (1) tabloya baslik eklemek icin caption i kullaniriz. -->
+        <caption>IT COURSE STAFF LIST</caption>
+        
+        <!-- (2) kisa yoldan table header olusturmak icin : tr>th*4 -->
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Age</th>
+            <th>Number</th>
+        </tr>
+        <!-- (3) kisa yoldan table header olusturmak icin : tr>td*4 -->
+        <tr>
+            <td>jack</td>
+            <td>smith</td>
+            <td>32</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>bella</td>
+            <td>smith</td>
+            <td>24</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>john</td>
+            <td>smith</td>
+            <td>54</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>smith</td>
+            <td>24</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>veli</td>
+            <td>smith</td>
+            <td>25</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>deli</td>
+            <td>smith</td>
+            <td>27</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>jhonson</td>
+            <td>smith</td>
+            <td>28</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>ahmet</td>
+            <td>smith</td>
+            <td>43</td>
+            <td>12345</td>
+        </tr>
+        <tr>
+            <td>giray</td>
+            <td>smith</td>
+            <td>34</td>
+            <td>12345</td>
+        </tr>
+
+
+
+
+    </table>
+</body>
+</html>

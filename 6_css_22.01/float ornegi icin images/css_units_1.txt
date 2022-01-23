@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        body{ /*(18)*/
+            font-size: 20px; /*(19) body ye 20 px verirsek , bu sefer em rem ve degerleri default deger olan 16 yi degil 20pxi alir.*/
+        }
+        /*(20) em kendi rem root elemente gore deger alir*/
+        h1{
+            /*(4) h1 in defailt degeri normalde 32px fakat biz font size a 60 px dersek*/
+            font-size: 60px; /*(4)*/
+            width: 500px; /*(4)*/
+            background-color: chocolate; /*(4)*/
+            padding: 20px; /*(4)*/
+        }
+        p{  /*(5)*/
+             /*font-size: 40px;(3) bu verilen deger absolute bir uzunluk degeri oluyor*/ /*(10) font size i yoruma al, em ve rem anlatimi icin*/ 
+            width: 50% ; /*(5)*/
+            /*background-color: darkblue;*/ /*(5)*/
+            /*(8) backround color yorum yapildi*/
+        }
+        div{ /*(12)*/
+            font: size 2em; ; /*(13) yoruma al*/
+        }
+        .em-class{
+            background-color: darkgoldenrod;
+            font-size: 2em;  /*(11) 2*16 =32 olarak alir*/  /*(14) yoruma al*/
+        }
+        .rem-class{ /*(9)*/
+            background-color: darkorchid;
+            font-size: 3rem; /*(16) 3x16 olarak alir*/
+        }
+        /*(17) h degerleri haric tum sayfanin defalt degeri 16px. bu nedenle rem ve em nin onune bir sayi yazdigimizda bunu carparak o degeri veriyor.yorum (16 ve 13)te oldugu gibi*/
+    </style>
+</head>
+<body>
+    <!-- (1) -->
+    <h1>UNITS LESSON</h1>
+    <!-- (2) -->
+    <p>
+       absolute lenght 
+    </p>
+
+    <!-- (6) -->
+    <div class="em-class"> 
+        <p>
+            Paragraph with em
+        </p>
+    </div>
+
+    <!-- (7) -->
+    <div  class="rem-class"> 
+        <p>
+            Paragraph with rem
+        </p>
+    </div>
+
+    
+</body>
+</html>

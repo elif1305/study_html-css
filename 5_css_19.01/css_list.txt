@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST</title>
+    <style>
+        .item{
+            /* list-style-type: georgian; */
+            /* list-style-type: upper-latin; */
+            /* (3)list-style-type a unicode dedigmiz kodlardan vererek image ve ya degisik sembollleri de kullanbliriz. Kodun basina \isareti konulup code yazilir. internete unicode yazildigi zaman bir cok koda erisim var.
+            list-style-type: "\1F648"; */
+            list-style-type: "\263B"; 
+            /*(6)itemin icerde mi disarda mi olmasina karar verilmesi icin: default degeri outside dir. */
+            list-style-position: inside;
+
+           /* (7)list item i image da yapabiliriz, bunun icin :
+            list-style-image: url("buraya resmin adresini yaz. ./ ile baslayarak"); */
+
+            /* (8)kisa yol : 
+            list-style: square inside url("./resmin adresi");
+            hem square hem url verilmesnin nedeni resmi bulamazsa square yapmasi icin.
+            */
+           
+
+        }
+        /* (4) sectigimiz item in gorunusunu degistirmek icin: (li:before)un ile unicodu kullan. Eger sectigimizin item in gorunusunu degistirmek istemiyorsak list-style-type yeterli olacaktir. */
+        /* li:before{
+            content:"\263B" ;
+            color: seagreen;
+            padding-right: 10px;
+             (5)daha farkli ozelliklerde katabilriz 
+        } */
+    </style>
+</head>
+<body>
+    <!--
+        (1)Asagidaki gibi liste elemanlarini kisa yoldan olusturmak icin emmet:
+        ul>li.item${item$}*5 
+     <ul>
+        <li class="item1">item1</li>
+        <li class="item2">item2</li>
+        <li class="item3">item3</li>
+        <li class="item4">item4</li>
+        <li class="item5">item5</li>
+    </ul> -->
+
+    <!-- 
+        (2) 2 tane class vermek icin bu sekilde emmet:(bu sekilde item a css de bir degisiklik yaparsak butun itemleri etkileyecegi icin hepsine hem ayni hem ayri class ismi verdik)
+        ul>li.item.item${item$}*5 -->
+    <ul>
+        <li class="item item1">item1</li>
+        <li class="item item2">item2</li>
+        <li class="item item3">item3</li>
+        <li class="item item4">item4</li>
+        <li class="item item5">item5</li>
+    </ul>
+
+</body>
+</html>

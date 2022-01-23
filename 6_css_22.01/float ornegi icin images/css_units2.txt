@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>units2</title>
+    <style>
+    /*(1) em en yakin perant a gore deger alirken rem root a gore degerini alir*/
+
+    div{ 
+        font-size: 30px;  /*(3)*/
+        width: 50vw;  /*(7)sayfa buyukugu degistikce kapladigi alandegisir. cunku vw gorunur alanin(sayfanin) yuzde 50sini kapla demek*/
+        height: 40vh; /*(7) sayfa buyukugu degistikce kapladigi alandegisir. cunku vw gorunur(sayfanin) alanin yuzde 70ini kapla demek*/
+       
+        background-color: deepskyblue; /*(7)*/
+        
+         /*(8) vw ve vh nin yuzdeden farki, eger perant element varsa yuzde % peranta gore kapladigini alani belirler*/
+    }
+    span{
+       /* font-size: 0.5em;*/  /*(4) burada em degerini div in fontsize i olan 30pxten aldi, cunku span div in child i.yani degeri 30*0.5 ten 15 px oldu*/ /*(5) yoruma al*/
+        font-size: 0.5rem; /*(6)bu sefer degerini defaul deger olan 16px ten alir ve yeni degeri 16 x 0.5 ten 8 px olur. cunku rem degerini rootan alir*/
+    }
+    </style>
+</head>
+<body>
+    <!-- (2) -->
+    <div>some text is here. <span>the span element</span></div>
+</body>
+</html>

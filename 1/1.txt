@@ -1,0 +1,200 @@
+1. DERS _ HTML - CSS
+
+- HyperText Markup Language
+- vs code da (!) + enter yapildigi zaman direk yazar.  
+- head ve body kisimlari olmazsa olmazdir.
+- body esas gorulmesi istenen seylerin yazildii ana alandir.
+- vs code uzerinde saga tikla ' format document' de . yana kayan kodlari senin ekranina gore hizalar. 
+yani kodda gorunmeyen bise kalmaz.( alt +  z yap)(prettier)
+
+
+-HEAD KISMINDA SIK KULLANILANLAR-
+
+head>
+
+  <meta charset="UTF-8" />               (kodda yazilan bir cok karakterin sikinti cikmayacak sekilde algilanmasi icin , ornegin turkce karakterler gibi)
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>         (kodlar bazi browserlarda uygun calismazsa diye konmus olan uyumlastirma ile ilgili
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>         ( gountulenme alani ile ilgli, kodum server a yuklendigi zaman acildigindaki gorunumu , zoom duzeyi diyebiliriz.)
+  <meta name="description" content="buraya sayfanin aciklamasini yaz"  />       (sayfanin aciklmasi ile ilgili sik karsilasilan bir meta)
+  <meta name="keywords content=" gezi, yeni yerler, turist, Norway"   />       (SEO ile ilgili.anahtar kelimeleri yazablirisn )
+  <link rel="shortcut icon" href= "fovicon.ico" type='image/x-icon" />        ( fovican yazan yere ./ yazinca imlec cikiyor oradan genelde png formatinda image koyablirsin, x-con yerinede formatini yaz. jpeg,png gibi. Sekmede gorulmesi icin.) 
+  <link rel="stylesheet" href="#" />    ( simdilik # yazildi. dosya turu olustugunda dosyanin turu orada yazacak.)
+<title> MY WORLD: NORWAY </title>      ( SEO icin onemlidir. Sekme acildigi zaman tarayicida gorunen isimdir.browserin ust kisminda.
+
+</head>
+
+-BODY KISMINDA SIK KULLANILANLAR-
+
+CTRL + /  --> yorum yapmak icin 
+
+
+-  h$*6 yaz enter de. h1 de h6 ya kadar alt alta yazar.
+ <h1></h1>
+ <h2></h2>
+ <h3></h3>
+ <h4></h4>
+ <h5></h5>
+ <h6></h6>
+
+  <!-- lorem -->  yazinca imlec cikiyor, otomatik metin ekliyor. lorem5,lorem4 vsvs yazablirsin, o sayi kadar kelimelik cumle cikarir.
+<p>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusantium aliquam aliquid debitis similique dolore id, 
+porro voluptate impedit sed consequuntur inventore voluptas assumenda repellat ab vitae perspiciatis. Saepe, corporis.
+ </p>
+
+
+-  <h> ve <p> elementi blok elementtri. yani bulundugu satirin tamamini kapsar.
+
+<hr>  ---> cizgi ceker (empty element)
+
+<br>  ----> alt satira gecirir  (empty element- yani kapanis kodu yok)
+
+<b> </b>  ---> bold yazmak icin
+
+<strong> </strong>  ---> bold yazmak icin (SEO icin onemli)
+
+<i> </i>  ---> italik yazmak icin
+
+<em> </em>  ---> italik yazmak icin (SEO icin onemli)
+
+<u> </u>  ---> alti cizili yazmak icin
+
+<del> </del>  ---> ustu cizili yazmak icin
+
+<mark> </mark>  ---> higligth yazmak icin
+
+<sup> </sup>  ---> ussu yazmak icin
+
+<sub> </sub>  ---> alta yazmak icin
+
+
+
+LIST'LER
+
+
+Unordered list:
+
+<ul style="list-style-type: sqare>        type="square" yazilsada olur
+  <li>Norway</li>
+    <ul>
+      <li>1.sehir</li>
+      <li>2.sehir</li>
+    </ul>
+  <li>Denmark</li>
+  <li>Poland</li>
+  <li>Sweden</li>
+</ul>
+
+
+o Norway
+	o sehir 1
+	o sehir 2
+o Denmark
+o Poland
+o Sweden
+
+
+Ordered list:
+
+<ol start="3" type="i" reversed>
+  <li>Norway</li>
+    <ol>
+      <li>1.sehir</li>
+      <li>2.sehir</li>
+    </ol>
+  <li>Denmark</li>
+  <li>Poland</li>
+  <li>Sweden</li>
+</ol>
+
+1 Norway
+	i sehir 1
+	ii sehir 2
+2 Denmark
+3 Poland
+4 Sweden
+
+cok kullanilyan bir yontem daha:
+
+<dl>
+  <dt>norvec</dt>
+  <dd>ulke</dd>
+  <dt>oslo</dt>
+  <dd>sehir</dd>
+</dl>
+
+
+
+images
+
+<img src="../" alt="resim cikmazsa yazacak yazi" >
+
+
+<img src="./" alt="resim cikmazsa yazacak yazi" width="200px" >
+<img src="internet source u" alt="resim cikmazsa yazacak yazi" width="200px" >
+
+
+
+tables
+
+
+<!-- ekranin yuzde ellsini kapsa demek -->
+<table border="1" width="50%">   
+  <caption style="text-align: left;">tablonun ismi</caption>
+  <tr>
+    <th>name</th>
+    <th>path</th>
+    <th>lesson</th>
+  </tr>
+  <tr>
+    <td>ella</td>
+    <td colspan="2">FS</td>
+    <!-- <td>HTML-CSS</td> -->
+  </tr>
+  <tr>
+    <td>Bella</td>
+    <td>FSS</td>
+    <td rowspan="2">HTML-CSS</td>
+  </tr>
+  <tr>
+    <td>Bella</td>
+    <td>FSS</td>
+    <!-- <td>HTML-CSS</td> -->
+  </tr>
+
+
+link
+
+<a href="site adini yaz, link yapmak istedigin" target="_blank"></a>
+
+<!-- target blank yeni sayfada acsin diye -->
+
+<a href="site adini yaz, link yapmak istedigin" target="_blank">
+<img src="" alt="" width="100px">
+
+</a>
+
+
+dosya indirme linnki yapmak
+
+<a href="buraya zipli dosyayi koy ./ ile"> download file </a>
+
+<!-- zipli image yap -->
+
+
+<!-- sayfaya kucultulmus ekran koymak icin -->
+
+<iframe src="buraya koymak istedigin site linkini yaz" frameborder="0" width="ekranin yuzde kaci olsun buraya yaz"></iframe>
+
+-CSS-
+
+INLINE CSS
+INTERNAL CSS
+EXTERNAL CSS
+
+
+
+
+External css i baglamak icin , actigin css dosyasinin adini :
+
+  <link rel="stylesheet" href="#" />    burdaki # yerine yaz.

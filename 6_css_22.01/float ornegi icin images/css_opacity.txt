@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+    <style>
+        /*(4)*/
+        h1{
+            background-color: blue;
+            padding: 5px;
+            border: 3px solid black;
+            opacity: 0.5; /*dedigimiz zaman yuarda yazan tum degerlere opacity verir*/
+        }
+        /*(5)*/
+        div{
+            background-color: brown;
+            padding: 5px;
+            border: 3px solid black;
+            /* opacity: 0.5;  (7) burayi yorum yapip kapatirsak p ye verilen 1 opacity degerini uygular*/
+        }
+        p{ /*(6)*/
+            opacity: 0.5; /*opacity icin 0-1 arasi deger nokta kullanilarak yazilir,
+            o.5 opacity degerini sadece yaziya uygular*/
+        }
+        /*(8)*/
+        img{
+            opacity: 0.5;
+        }
+        /*(9)*/
+        img:hover{
+            opacity: 1;
+            width: 320px;
+        }
+    </style>
+</head>
+<body>
+    <!-- (1) -->
+    <h1>IT SCHOOL</h1>
+    <hr>
+    <div>
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat animi necessitatibus ducimus facere eum illo quibusdam quasi voluptas dolorum sint.</P>
+    </div>
+    <hr>
+    <img src="https://picsum.photos/id/610/300/200" />
+    <!-- (2) 
+        https://picsum.photos/id/610/600/400
+        610 ve 600 yazan yerdeki sayilari degistirirsek resmin kendisini ve boyutnu degistirebilirz. -->
+    <!-- (3) 2 resim daha ekledik -->
+    <img src="https://picsum.photos/id/611/300/200" />
+    <img src="https://picsum.photos/id/612/300/200" />
+    
+</body>
+</html>

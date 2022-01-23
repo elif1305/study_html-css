@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Property</title>
+    <style>
+        /*(4)*/
+        body{
+            background-color: royalblue;
+        }
+        h1{  /*(5)*/
+            background-color: sandybrown;
+            text-align: center;
+        }
+        #first{  /*(6) float-right yazildigi zaman image i saga atti yaziyi sola alip resmi sarmallatti */
+            float: right;
+            padding: 10px; /* (8) daha duzenli hala getirmek icin verildi*/
+            margin-left: 50px; /*(11) daha belirgin gorebilmek icin margin e 50px verdik*/
+        }
+        /* (9) istersek img e yukardaki ozellikleri verip ikisi image icinde uygulanmasini saglayabilirdik
+        img{
+        float:right;
+        padding: 10px;
+        }*/
+        p{ /*(7) text align a justffy vererek metni daha duzenli hale getirebiliriz*/
+            text-align: justify;
+            
+        }
+        #second{ /*(10) float left dersek image i sola alip yaziyi saga alir*/
+            float: left
+        }
+       /* #parag1{ (13)
+            clear:right clear right dersek paragrafin sagindaki resmi yukari alir paragrafi asagialir, yani aslinda paragrafin saginda bise birakmayacak sekilde ayirir*/
+            /* (14) clear:left denirse bir degisiklik olmaz cunku zaten metnin solunda birsey yok  
+        } */
+
+        li{ /*(14) floatin kullanildigi bir ornek;*/
+            list-style: none; /*noktalari kaldirmak icin*/
+            float: left; /*kelimeleri yanyana koymak icin*/
+            padding-right: 10px; /*aralarini acmak icin*/
+        }
+    </style>
+</head>
+<body>  
+    <!-- (2) -->
+    <h1>ONLINE EDUCATION</h1>
+    <img src="./online.png" alt="online" width="30%" id="first" />
+    <p id="parag1">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquid veritatis hic dolorum temporibus consequuntur dolores nisi voluptatibus quam blanditiis? Ab unde odio totam impedit quisquam rerum explicabo fuga, sint in. Iure dolorum sapiente temporibus accusamus, fugit a perferendis at nihil, quam, voluptatem et facere aliquid assumenda eligendi dignissimos cum neque. Soluta pariatur, id eum magni quos cum quisquam exercitationem magnam, dolorem dignissimos rem animi sequi. Doloribus amet modi minima. Optio quam, suscipit laudantium ut adipisci facere quasi quisquam consectetur nam, eveniet, sed quas beatae explicabo mollitia sunt tempore voluptatum tenetur possimus eaque. Placeat sapiente et consequuntur pariatur ab atque!
+    </p>   
+    
+    <!-- (3) -->
+    <h2>Advantages of online education</h2>
+    <div>
+        <img src="./education.png" alt="education" width="30%" id="second" />
+    </div>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquid rem, libero officia doloremque nulla necessitatibus ratione, voluptatibus quo, officiis inventore tenetur quos consectetur temporibus veritatis beatae odit consequatur et eius reprehenderit! Eveniet sed laudantium delectus ea omnis provident quisquam itaque perferendis dolorem sapiente expedita culpa, veniam quasi dicta deserunt pariatur id, quos deleniti. Natus exercitationem, necessitatibus, vitae saepe nihil nam facere laborum dolorem ea mollitia, ipsam tempora dicta eaque temporibus est minima. Maxime molestiae adipisci ea molestias veniam ullam iusto enim fugiat libero, impedit mollitia quasi, culpa non unde dolor? Quis itaque, incidunt quisquam voluptates eaque iste esse dolores.
+    </p>
+
+    <!-- (12) -->
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+    </ul>
+
+
+    <!-- (1) parent child iliskisi icin yazilmis bir ornek, kisaca anlatildi
+    <header>
+        <nav>
+            <p>
+                this is child for nav element.
+            </p>
+        </nav>
+    </header> -->
+</body>
+</html>

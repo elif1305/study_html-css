@@ -1,0 +1,65 @@
+## html ###
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="##">  ## bu olan yere external css dosyaisini yazabiliriz, boylece external css kodlari buraya uygulanir -->
+    <title>css-margin</title>
+</head>
+<body>
+    <div class="box">
+    <div class="one">ONE</div>
+    <div class="two">TWO</div>
+    <div class="three">THREE</div>
+    </div>  
+</body>
+</html>
+
+
+
+## css ##
+
+/* * sayfadaki herseyi secer */
+
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+
+
+body{
+    background-color: blue;
+}
+
+.box{
+    background-color: brown;
+    width: 80%;
+    margin: 100px auto;
+}
+
+.one{
+    background-color: chocolate;
+    
+}
+
+.two{
+    background-color: crimson;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    /* kisaca:
+    margin: 10px 20px 20px 50px
+    isteninlirse tek degerlerde verilebilir.
+    margin: 10px (bu sefer her tarafa 10px margin verir)
+    */
+}
+.three{
+    background-color: darkgoldenrod;
+}

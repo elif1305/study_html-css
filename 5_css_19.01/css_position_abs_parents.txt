@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+    /*(4)*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* (2) */
+        .bigBox{
+            background-color: green;
+            width: 500px;
+            height: 500px;
+            border: 2px solid black;
+
+            /*(5) box1 absolut olmasina ragmen hareket etti. bunun icin soyle deriz:position absolut oldugu zaman icinde bulundugu elemanin 0 a 0 noktasina gore hareket eder.*/
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        .box1{
+            background-color: orangered;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            position: absolute;
+            top: 60px;
+            left:80px;
+        }
+        .box2{
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            position: relative; /* (3) eger burada absolut denire box1 ile ustuste gelir*/
+            top: 40px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <!-- (1) -->
+    <!-- kisa yoldan olusturmak icin:
+    div.bigBox>div.box${box$}*2 -->
+
+    <div class="bigBox">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+    </div>
+</body>
+</html>
