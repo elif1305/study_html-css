@@ -1,0 +1,23 @@
+<h1>PSEUDO CLASS AND ELEMENTS</h1>
+    <p> You can learn from <a href="https://www.clarusway.com">Clarusway</a> </p>
+    <img src="./images/cw_son.png" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae possimus itaque molestias velit, perferendis cupiditate.</p>
+    <ul>
+        <li>Data Science</li>
+        <li>full Stack</li>
+        <li>AWS  & DevOp </li>
+        <li>Cyber Security</li>
+        <li>Web3</li>
+        <li>Blockchain</li>
+    </ul>
+
+    <form action="">
+        <label for="">ADINIZ :</label>
+        <input type="text">
+        <br><br>
+        <label for="">SOYADINIZ:</label>
+        <input type="text">
+        <br><br>
+        <label for="">Yorum:</label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
