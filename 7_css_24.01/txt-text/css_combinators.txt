@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+
+    <style>
+
+          /* (3) evrensel  secici */  
+        *{
+            font-size: 20px;
+            line-height: 25px;
+            box-sizing: border-box;
+            background-color: chocolate;
+        }
+
+
+            /*(4) etiketlerle ulasabliriz*/
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            color:crimson;
+        }
+           /*(5) class ile ulasabliriz*/
+        .brand{
+            width: 50%;
+            float: right;
+            padding: 10px;
+        }
+
+         /* (6) id secici
+         #idadi{
+
+         }
+         */
+
+         /* (7) combinators ile ulasabliriz  */
+         /* birden cok elemente ulasip benzer ozellikleri vereceksek combinators lari kullaniriz */
+
+         /* (10) tamami yoruma alindi.
+        /* div p{  /* div in icindeki butun p lere ulasmak icin*/
+           /* color: rgb(154, 231, 12); /* (8)*/
+          /*  font-weight: 700; /* (9)*/  /*  }  */
+
+         div>p{  /*(11)torunlara soz hakki vermiyor, yani liste icindeki p taglerine ulasamadi */
+            color: rgb(154, 231, 12); 
+            font-weight: 700; 
+
+         }
+         /*(12) li icindeki p lere ulasmak icin*/
+         li>p{
+             border: 2px solid blue;
+         }
+
+         div + p  { /* (13)kendisinden sonra gelen ilk tagi secer. div ile ayni seviyede olan ilk p tagine ulasmak icin, burada div den sonra p degilde img gelseydi img yazilmasi gerekirdi.*/
+             border: 3px solid green;
+         }
+
+         div~p{ /*(14) divden sonra gelen tum p etiketlerine ulasmak icin*/
+            background-color: aqua;
+            border: 3px solid black;
+         }
+            /*(15) burada div~p yi uyguladi , bundan once yazilan div+p yi uygulamadi, cunku siralama en son yazilan kod gecerlidir.*/
+
+        div ~ img{  /*(16)bu ornete + kullanilmazdi. cunku div den sonra gelen 2 tane p tagi var. + dan sonra hangi tagi yaziyorsak , siralamada onun gelmesi lazim.  */
+            background-color: blueviolet;
+            border: 3px solid yellow;
+            border-bottom-left-radius: 50px;
+        }
+
+            /*(17) birden cok elemeani , virgul ile secebiliriz, .brand,p de secileblir , yani id class vs de toplu olarak secileblir. */
+        p, img{
+            outline: 4px solid red;
+        }
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <!-- (1)combinators birden fazla ozellikteki elemente ayni anda ulasmamizi saglar.
+    1-descendent selctor; (or: div p) div icindeki tum p leri sec demek.
+    2-child selector ; (or: div > p) parent -child iliskisi var
+    3- adjacent sibling selector ; (or: h2 + p)es duzeydeki elemntleri secici, h2den sonraki kendinsiyle es duzeyde olan ilk p yi etkile
+    4-general sibling selector;(or: h2 ~ p) h2den sonraki ayni seviyede olan tum p ler sec
+-->
+<!-- (2) alttaki div in tamami yazildi -->
+<div>  
+    <h1>SELECTORS</h1>
+    <hr>
+    <img  class="brand" src="./cw_son.png" alt="">
+    <p>In CSS, selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. In this article and its sub-articles we'll run through the different types in great detail, seeing how they work.</p>
+    <p>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. The element or elements which are selected by the selector are referred to as the subject of the selector.</p>
+    <p>If you have more than one thing which uses the same CSS then the individual selectors can be combined into a selector list so that the rule is applied to all of the individual selectors.</p>
+
+    <ul>
+        <li>
+            <p>Descendant Selectors</p>
+        </li>
+        <li>
+          <p>Adjacent sibling selectors</p>
+      </li>
+      <li>
+          <p>Pseudo Selectors</p>
+      </li>
+      <li>
+          <p>Universal Selector</p>
+      </li>
+    </ul>
+
+  </div>
+    
+<P>Adjacent Sibling Selector- Bitişik Kardeş seçici</P>
+<p>general sibling selector - Genel kardeş seçiçi </p>
+<img src="./html-css.png" alt="" width="50%">
+  
+
+</body>
+</html>

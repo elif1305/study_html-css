@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUTLINE</title>
+
+    <style>
+        p{
+            background-color: chartreuse; /*(2)*/
+            border: 3px solid tomato; /*(2)*/
+
+           /* outline-style:dotted; (3) kisa yolu gormek icin yoruma alindi.*/  /*(2)*/
+           /* outline-width: 10px; */ /*(2)*/
+           /* outline-color: darkorchid;*/  /*(2)*/
+
+            /* ----------outline kisayolu------------*/
+            outline: 5px dashed black; /*(4)*/
+            outline-offset: 20px;  /*(5)border ile outline arasindaki boslugu ifade eder + ve - deger alir. - verilirse outline border gore iceri kisma (contente dogru) kayar*/
+
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- (1) -->
+    <H1>OUTLINE</H1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ullam voluptates esse alias officia nemo, voluptas blanditiis, veniam quibusdam assumenda aliquam amet? Dolore, quos voluptatum, inventore molestias libero nihil sint saepe corrupti fugiat ea, debitis dolorem molestiae! Sapiente, autem libero?</p>
+</body>
+</html>

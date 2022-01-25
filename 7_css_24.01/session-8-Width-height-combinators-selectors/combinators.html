@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators - Birleştirici</title>
+    <style>
+        /* --------evrensel seçici-------- */
+        *{
+            box-sizing: border-box;
+            font-size:20px;
+            line-height: 25px;
+            background-color:lightsteelblue;
+        }
+
+
+        /* --- Etiketlerle ulaşabiliriz------ */
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            color:crimson;
+        }
+        /* -----Class ve id ile ulaşma---- */
+        .brand{
+            width: 50%;
+            float:right;
+            padding:10px;
+        }
+
+        /* ----------Combinators ile ulaşma--------- */
+        div p{
+            color:maroon;
+            font-weight: 700;
+        }
+
+        li > p{
+            border: 2px solid blue;
+        }
+       
+        div ~ p{
+            background-color: tomato;
+           
+        }
+
+        div + p{
+            border: 3px solid green;
+        }
+
+
+        div ~ img{
+            background-color: dodgerblue;
+            border:3px solid gray;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        /* .brand,p{
+            outline:4px solid red;
+        } */
+
+    </style>
+
+</head>
+<body> 
+        <div>
+            <h1>SELECTORS</h1>
+            <hr>
+            <img  class="brand" src="./images/cw_son.png" alt="">
+            <p>In CSS, selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style. In this article and its sub-articles we'll run through the different types in great detail, seeing how they work.</p>
+            <p>A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to have the CSS property values inside the rule applied to them. The element or elements which are selected by the selector are referred to as the subject of the selector.</p>
+            <p>If you have more than one thing which uses the same CSS then the individual selectors can be combined into a selector list so that the rule is applied to all of the individual selectors.</p>
+      
+            <ul>
+                <li>
+                    <p>Descendant Selectors</p>
+                </li>
+                <li>
+                  <p>Adjacent sibling selectors</p>
+              </li>
+              <li>
+                  <p>Pseudo Selectors</p>
+              </li>
+              <li>
+                  <p>Universal Selector</p>
+              </li>
+            </ul>
+      
+          </div>
+          
+          <P>Adjacent Sibling Selector- Bitişik Kardeş seçici</P>
+          <p>general sibling selector - Genel kardeş seçiçi </p>
+          <img src="./images/html-css.png" alt="" width="50%">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

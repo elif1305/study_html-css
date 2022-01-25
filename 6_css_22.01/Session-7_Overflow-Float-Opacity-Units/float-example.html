@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page with Float</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        background-color: aqua;
+        border: 1px solid black;
+      }
+      main {
+        background-color: blueviolet;
+        padding: 20px;
+        border: 1px solid black;
+        /* height: 500px; */
+        overflow: auto;
+      }
+      aside {
+        background-color: chartreuse;
+        border: 1px solid black;
+        width: 25%;
+        height: 300px;
+        float: left;
+      }
+      article {
+        background-color: coral;
+        border: 1px solid black;
+        width: 70%;
+        height: 300px;
+
+        float: right;
+      }
+      footer {
+        background-color: darkgray;
+        border: 1px solid black;
+      }
+      /* .clear {
+        clear: both;
+      } */
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>HEADER</header>
+    <main class="clearfix">
+      <aside>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, beatae
+        fuga incidunt soluta, unde dolores temporibus odit culpa ea minima, .
+      </aside>
+      <article>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius eveniet
+        soluta hic ratione nobis enim vero quidem odit officia laudantium
+        repellendus earum voluptas ullam saepe, est inventore et veritatis
+        magnam sed maxime quisquam iure pariatur debitis. Iste harum consectetur
+        impedit laudantium consequatur dolor facere magni tenetur, a dolore esse
+        asperiores quos placeat fugit nobis eveniet modi aliquid excepturi
+        voluptas saepe numquam hic ducimus? Rerum aliquam amet eveniet odio quae
+        ut accusamus. Debitis, doloremque sed! Nesciunt vero rerum quo quaerat
+        repellendus!
+      </article>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quos
+        facilis enim quo aliquid impedit error atque cum ipsum soluta reiciendis
+        maiores quas saepe perferendis nostrum beatae, ullam placeat quasi eum
+        praesentium laudantium ad exercitationem ipsa sunt. Libero, impedit in.
+      </div>
+
+      <!-- <div class="clear"></div> -->
+    </main>
+    <footer>Webpage with Float CLARUSWAY</footer>
+  </body>
+</html>

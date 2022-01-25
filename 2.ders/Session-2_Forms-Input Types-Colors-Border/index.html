@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <style>
+        #userInfo{
+            background-color:rgba(0,150,255,0.8);
+        }
+        #genderInfo{
+            background-color: #9201aa;
+            border-top:5px solid #3b9038;
+        }
+        #favourite{
+
+            /* border-width: 5px;
+            border-style:groove;
+            border-color: darkcyan; */
+
+            border:5px groove darkcyan;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        input{
+            background-color: darksalmon;
+        }
+        #yas{
+            background-color: rgb(126, 33, 104);
+        }
+        #ara{
+            background-color: #99DBF3;
+        }
+        #birthDate{
+            border-top:5px dotted rgb(201,06,28)
+        }
+    </style>
+</head>
+<body>
+    <form action="result.html">
+        <h1>SİZİ TANIYALIM</h1>
+        <!-- ----------INPUT TEXT PASSWORD-------- -->
+        <div id="userInfo">            
+            <label for="ad">AD:</label>
+            <input type="text" name="username" id="ad" placeholder="Adınızı giriniz..." >
+            <br><br>
+            <label for="soyad">SOYAD:</label>
+            <input type="text" name="surname" id="soyad" placeholder="Soyadınızı giriniz..." >
+            <br><br>
+            <label for="sifre">ŞİFRE:</label>
+            <input type="password" name="password" id="sifre" placeholder="Şifre giriniz..." >
+        </div>
+        
+        <!-- ------------RADIO BUTTON------------- -->
+        <div id="genderInfo">
+            <h3>CİNSİYET</h3>
+
+            <input type="radio" name="cinsiyet" id="gender1" value="erkek">
+            <label for="gender1">Erkek</label>
+
+            <input type="radio" name="cinsiyet" id="gender2" value="bayan">
+            <label for="gender2">Bayan</label>
+        </div>
+        <hr>
+        <!-- ------------CHECKBOX------------- -->
+        <div id="favourite">
+            <h4>En Sevdiğiniz Hayvanlar:</h4>
+            <input type="checkbox" name="animal" id="panda" value="panda">
+            <label for="panda">Panda</label>
+
+            <input type="checkbox" name="animal" id="kedi" value="kedi" checked>
+            <label for="kedi">Kedi</label>
+
+            <input type="checkbox" name="animal" id="kuzu" value="kuzu">
+            <label for="kuzu">Kuzu</label>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="yas">YAŞ:</label>
+            <input type="number" name="age" id="yas" min=7 max=70>
+        </div>
+        <br>
+        <div>
+            <label for="ara">Kitap ara:</label>
+            <input type="search" name="search" id="ara" placeholder="Aranacak kelimeyi girin...">
+        </div>
+        <br>
+        <div>
+            <label for="renk">Sevdiğiniz Renk:</label>
+            <input type="color" name="color" id="renk">
+        </div>
+        <br>
+        <div>
+            <label for="eposta">Email:</label>
+            <input type="email" name="email" id="eposta" placeholder="example@example.com" required >
+        </div>
+        <br>
+        <div>
+            <label for="dosya">Profil Fotoğrafı:</label>
+            <input type="file" name="file" id="dosya" multiple>
+        </div>
+        <br>
+        <div>
+            <label for="tel">Telefon No:</label>
+            <input type="tel" name="phone" id="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            placeholder="xxx-xxx-xx-xx">
+            <!-- 555-555-55-55 -->
+        </div>
+        <br>
+        <div>
+            <label for="">Hangi Tatlıyı Seversiniz?:</label>
+            <select name="" id="">
+                <option value="sütlac">Sütlaç</option>
+                <option value="baklava" selected>Baklava</option>
+                <option value="puding">puding</option>
+                <option value="kadayif">Kadayıf Dolması</option>
+            </select>
+        </div>
+        <br>
+        <div id="birthDate">
+            <label for="dogum">Doğum Tarihi Seçin:</label>
+            <input type="date" name="date" id="dogum"   value="2018-07-22"
+            min="2018-01-01" max="2018-12-31">
+        </div>
+
+        <input type="reset">
+        <input type="submit" >
+
+
+
+    </form>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeightAndWidth</title>
+    <style>
+        
+        body{
+            background-color: bisque; /* (2) */
+            box-sizing: border-box; /* (2) */
+        }
+        .main-content{
+            background-color: blueviolet; /* (3) */
+            width: 500px; /* (3) px ile degismeyecek olculeri tanimlariz ,  eger bu width degeri verilmeseydi backgraund soldan saga tum sayfayi kapsayacaki, sayfa ne kadar buyultulsede kucultulsde ekran uzerindeki goruntu degilsmeyecek, mesela site logosu icin px ile deger verileblir */
+            margin: 0 auto; /* (3)auto yazinca ortaya aldi*/
+            padding: 2%; /*(3)*/
+            height: 300px; /*(5)*/
+            font-size: 20px;  /*(7)*/
+            overflow: scroll; /*(12)*/
+        }
+
+        .auto-width{
+            width:auto; /*(4) default degerdir , soldan saga tum sayfayi kapsar. height degeri de verilmezse, icindeki content kadar yer kaplar.*/
+        }
+        .lenght-width{
+            background-color: brown; /*(6)*/
+            width: 20vw; /*(8) ekran genisliginin yuzde 20sini kapsa demek*/
+        }
+
+        .percent-width{
+            background-color: chocolate; /*(9)*/
+            width: 50%; /*(9) bulundugun parent eleman icinde yuzde ellisini kapla demek*/
+           
+        }
+
+        .max-width{
+            max-width: 700px;  /*(10) burada yazinnin tasmasinin nedeni yukarda height degernin verilmis olmasi, eger height degeri verilmeseydi arkadaki mor renk yazi boyutunde uzayacakti, yani content kadar uzayacakti. */
+            min-width: 200px; /*(11)*/
+            
+        }
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <!-- (1) width ve height degerlerine pading border ve margin dahil degildir.-->
+
+    <!-- (1) -->
+    <h1>Width and Height </h1>  
+
+    <!-- (1) -->
+    <div class="main-content">
+        <!-- div.width*5{width}  kisa yol -->
+
+        <div class="auto-width">width</div>
+        <div class="lenght-width">view-width</div>
+        <div class="percent-width">width</div>
+        <div class="max-width">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio provident qui impedit reiciendis quae, adipisci vero nisi, earum non numquam ducimus! Praesentium harum voluptatibus ex aliquid distinctio, non quam animi nobis esse eligendi aliquam odit eius, officia totam maiores voluptate! Deleniti iure blanditiis, illo, adipisci culpa, ipsa corrupti vitae quaerat praesentium libero voluptatum perferendis? Reprehenderit qui facilis placeat quo? Maxime dicta at autem beatae omnis id exercitationem, similique molestiae ipsa quasi laudantium quas nam? Nemo praesentium sint, tempore ipsam natus repellendus dolore explicabo rem laborum voluptatum dignissimos vero facilis delectus adipisci similique atque neque doloribus eum tempora id iure mollitia. Minus omnis laborum aliquid atque soluta deserunt ea pariatur?</div>
+        <div class="width">width</div>
+
+    </div>
+
+</body>
+</html>

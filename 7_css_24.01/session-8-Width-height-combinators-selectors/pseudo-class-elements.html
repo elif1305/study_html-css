@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSEUDO-CLASS-ELEMENTS</title>
+    <style>
+      
+         a:hover{
+            background-color: firebrick;
+        }
+
+        img:hover{
+            border:4px solid gray;
+        }
+
+        ul li:first-child{
+            color:firebrick;
+        }
+
+        ul li:last-child{
+            color:forestgreen;
+        }
+
+        ul li:nth-child(3){
+            color:dodgerblue;
+        }
+
+        input:focus{
+            background-color: orangered;
+            border:4px solid gray;
+        }
+        input:hover{
+            background-color: olivedrab;
+        }
+
+        /* -------pseudo element------------ */
+
+        p::first-letter{
+            color:orangered;
+            font-weight: bolder;
+        }
+        p::first-line{
+            font-variant: small-caps;
+        }
+
+        p::after{
+            content:"Thank you"
+        }
+
+        p::before{
+            content:"\2615"
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>PSEUDO CLASS AND ELEMENTS</h1>
+    <p> You can learn from <a href="https://www.clarusway.com">Clarusway</a> </p>
+    <img src="./images/cw_son.png" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae possimus itaque molestias velit, perferendis cupiditate.</p>
+    <ul>
+        <li>Data Science</li>
+        <li>full Stack</li>
+        <li>AWS  & DevOp </li>
+        <li>Cyber Security</li>
+        <li>Web3</li>
+        <li>Blockchain</li>
+    </ul>
+
+    <form action="">
+        <label for="">ADINIZ :</label>
+        <input type="text">
+        <br><br>
+        <label for="">SOYADINIZ:</label>
+        <input type="text">
+        <br><br>
+        <label for="">Yorum:</label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>

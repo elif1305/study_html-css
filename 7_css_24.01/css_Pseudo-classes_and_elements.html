@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClassesAndElements</title>
+
+    <style>
+        a:hover{
+            background-color: brown; /*(2)*/
+        }
+
+        img:hover{
+            border: 4px solid gray; /*(2)*/
+        }
+
+        ul li:first-child{  /*(3)listenin ilk elemanina ulasim icin*/
+            color: firebrick;
+        }
+
+        ul li:last-child{ /*(4)listenin son elemanina ulasim icin*/
+            color: forestgreen;
+        }
+
+        ul li:nth-child(3){  /*(5)listenin n inci elemanin ve onun katlarina ulasim icin, even ya da odd da yazilablir*/
+            color: blue;
+        }
+
+        input:focus{ /*(6) hover dan farklidir, hover da fare uzerine gelince calisir, focus ta fare uzerine gelip tiklainca calisir*/
+            background-color: brown;
+            border: 4px solid gray;
+        }
+
+
+        /*(7) pseudo element*/
+        p::first-letter{    /*ilk harfine etki etmek icin*/
+            color: orange;
+            font-weight: bolder;
+        }
+
+        /*(8) ilk cumleye etki etmek icin*/
+        ::first-line{
+            font-variant: small-caps;
+        }
+
+        p::after{  /*(9) COK ONEMLI !!!  HTML ICINE(CONTENTE) CSSDEN MUDAHALE ETMENIN TEK YOLU BUDUR.*/
+            content: "Thank you";  /*buraya \2615 gibi kodlar da ekleneblir*/
+        }
+
+        p::before{ /*(10) p taginin basina etki etmek icin*/
+            content: "\2615";
+        }
+
+
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <!-- (1) bodynin hepsi yazildi -->
+    <h1>PSEUDO CLASS AND ELEMENTS</h1>
+    <p> You can learn from <a href="https://www.clarusway.com">Clarusway</a> </p>
+    <img src="./cw_son.png" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae possimus itaque molestias velit, perferendis cupiditate.</p>
+    <ul>
+        <li>Data Science</li>
+        <li>full Stack</li>
+        <li>AWS  & DevOp </li>
+        <li>Cyber Security</li>
+        <li>Web3</li>
+        <li>Blockchain</li>
+    </ul>
+
+    <form action="">
+        <label for="">ADINIZ :</label>
+        <input type="text">
+        <br><br>
+        <label for="">SOYADINIZ:</label>
+        <input type="text">
+        <br><br>
+        <label for="">Yorum:</label><br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>

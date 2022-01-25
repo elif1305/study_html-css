@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elements</title>
+  </head>
+  <body>
+    <form action="result.html" method="GET" name="myform">
+      <div>
+        <label for="cars">Choose a car:</label>
+        <br />
+        <select name="cars-select" id="cars" size="8" multiple required>
+          <optgroup label="Expensive Cars">
+            <option value="porche" selected>Porche</option>
+            <option value="masserati">Masserati</option>
+            <option value="ferrari">Ferrari</option>
+          </optgroup>
+          <optgroup label="Tüplü Öfkeli">
+            <option value="kartal-88">Kartal 88</option>
+            <option value="lada-samara">Lada Samara</option>
+            <option value="murat-131">Murat 131</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <br /><br />
+
+      <div>
+        <label for="message">Enter your comment here:</label>
+        <br />
+        <!-- style="width: 200px; height: 200px" -->
+        <textarea
+          name="comment"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Enter your comment here ..."
+          maxlength="9"
+          style="resize: none"
+          required
+        ></textarea>
+
+        <br /><br />
+
+        <div>
+          <label for="mybrowser">Browser :</label>
+          <br />
+          <input
+            type="text"
+            name="browser-option"
+            id="mybrowser"
+            list="browsers"
+            required
+          />
+          <datalist id="browsers">
+            <option value="Safari"></option>
+            <option value="Brave"></option>
+            <option value="Mozilla"></option>
+            <option value="Opera"></option>
+            <option value="IE-10"></option>
+            <option value="IE-12"></option>
+          </datalist>
+        </div>
+      </div>
+      <br /><br />
+
+      <fieldset style="width: 50%">
+        <legend>Personal Info :</legend>
+        <label for="firstname">First Name :</label>
+        <input type="text" name="name" id="firstname" placeholder="Ethan" />
+        <br /><br />
+        <label for="lastname">Last Name :</label>
+        <input type="text" name="lname" id="lastname" placeholder="Specter" />
+      </fieldset>
+      <br /><br />
+
+      <input type="submit" value="SEND" />
+    </form>
+  </body>
+</html>
