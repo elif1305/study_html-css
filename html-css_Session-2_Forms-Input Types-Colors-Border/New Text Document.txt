@@ -16,7 +16,16 @@
 
 buradaki label ve inputu birbirine baglamamiz gerekir. bunu da id ile veya name ile yapabliriz. biz burda id ile yaptik.
 
+## for id eslesmesi :
+<label for='ornek'> 
+<input id='ornek'> , eslesmeli,
 
+
+##  <input name="movie">  buradaki name backend karsiligi
+<input value="movie"> buradaki value o kutucuk secildiginde gidilecek olan deger,
+
+
+## px yerine rem kullanilmasi tum chazlarda uyumluluk acisindan daha iyi olacaktir.
 
 
 
