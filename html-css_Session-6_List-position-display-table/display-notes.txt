@@ -1,0 +1,9 @@
+Display ;
+
+
+# inline elementlere width ve height verilemez, verilsede bu gorunusunde bir degisiklik yapmaz.
+Olasi durumlarda verebilmek icin; display ozelligini block yaptigimiz zaman width ve height verebliyoruz.
+display :inline-block ozelligi hem inline hem block ozellik gibi davranilmasini saglar.Ancak belirtildigi gibi yine inline olarak yer kaplar, bir sonraki element yine yanina gelir.
+Width ve height vereblidigimiz icin ortada bir ozellik.
+
+Bu ozelligi ornegin vav barlarda kullanabliriz.Boylece kullanici sadece yazi ustune degil bloga tikladigi zamanda linke ulasir.
