@@ -1,0 +1,40 @@
+/* 
+Normalde bu genel birseydir. css e boyle baslanir.
+*{
+    margin: 0;
+    padding: 0;
+
+} */
+
+body{   /*(1)*/
+    background-color: beige;
+    color: blueviolet;
+}
+
+.flex-container{ /*(2)*/
+    display: flex;   /*itemlari yan yana dizmek icin*/
+    background-color: darkturquoise;
+    height: 400px;
+    /*(4) su an ki durumda ekrani sonuna kadar sikistirdigimizda item 9  bi yerden sonra yok oluyor*/
+
+   flex-direction: row; /* (5)default degerdir.*/
+   /*  flex-direction: row-reverse; /* (6)item 1 i en sonra aldi item 9 dan basladi bosluguda basa aldi.*/
+   /*  flex-direction: column; /* (7) item 1 den baslayarak yukaridan asagiya dogru dizer*/
+   /*  flex-direction: column-reverse; /* (7) item 9 dan baslayarak yukaridan asagiya dogru dizer */
+
+     /*flex-wrap: nowrap; /* (8)default degerdir.*/
+    /* flex-wrap: wrap; /* (9) ekran kuculdukca asagiya atar.*/
+     /*flex-wrap: wrap-reverse; /* (10) ekran kuculdukca asagiya atar.9u basa alir*/
+
+    /* flex-flow: row nowrap;   /* BI DAHA BAK (11)felrx wrap ile kombinasyon yapilablir/.*/
+    flex-flow: column wrap;
+}
+}
+
+.flex-items{  /*(3)*/
+    border: 1px solid crimson;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+}
