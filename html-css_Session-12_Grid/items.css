@@ -1,0 +1,80 @@
+
+/* .wrapper{  (6)
+    display: grid; (6)
+    justify-content: center;  (6)
+} */
+
+.container{  /*(1)*/
+    display: grid;  /*(1)*/
+    
+    grid-template-columns: 100px 300px 100px 100px;  /*(1)*/
+    grid-template-rows: 100px 500px 100px;  /*(1)*/
+
+    /* grid-template-columns: 10% 10% 20% 20%;
+
+    grid-template-columns: 3rem 3rem 5rem 6rem;  (7) 
+    responsive tasarimlar elde etmek icin yuzde em rem bkullannimi daha iyi olacaktir.
+
+    grid-template-columns: 100px 300px min-content 100px; 
+    min-content degeri verdigimizde o column u bolemeyecegi en kucuk degere(or:kelimeye) gore en kucuk boyutu  alir.
+
+    grid-template-columns: 100px 300px max-content 100px; 
+    min contentin tam tersidir.asagi satira kesinlikle inmez, sonuna kadar uzatir.
+    
+    grid-template-columns: 100px 300px minmax(100px, 240px) 100px; 
+    buradaki minmax: 100px in altina inme , 240pxi ustune cikma.
+
+    grid-template-columns: 100px 300px auto 100px; 
+    buradaki auto tum sayfaya sigdirma ozelligidir, verilenleri ayarlar geri kalan degeri auto alir.
+
+        --Fraction
+
+        grid-template-columns: 2fr 2fr 3fr 1fr;  tum sayfayi oranlayarak bolmektir. 
+
+        grid-template-columns: repear(2, 1fr) 3fr(or; 500px) repeat(2, 2fr);   repeat yapisi; 2 tane 1 fraction kullandemek , diger repeatte ise 2 tane 2 fraction kullan demek. fr yerine px te kullanilablir.
+    
+        (bu anlatilanlarin hepsi row icinde gecerlidir.)
+    
+    */
+
+
+    /*Gap özellikleri*/  /*(3)*/
+    /* column-gap: 20px;  /*(3)*/
+  /*  row-gap: 10px; */  /*(3)*/
+   /*Shorthand*/  /*(3)*/
+    /* gap:10px 10px; */  /*(3)*/
+
+}
+.content{
+    background-color: coral;   /*(2)*/
+    border: 2px solid black;   /*(2)*/
+    /* box-shadow: 2px 2px 2px gray;  /*(4)*/
+   /* border-radius: 5px; */  /*(4)*/
+}
+
+
+
+/* area tanımlama 1.yol*/
+.content1{
+grid-column-start:1 ; /* (8) burada 1 ilk cizgi demek, yani 1. cizgidem basla*/
+grid-column-end: 4;  /* (8) buradaki dort 4. cizgi yani 4. cizgide birlestirmeyi bitir*/
+background-color: crimson;
+}
+.content4{
+    grid-column-start: 2; /*(9)*/
+    grid-column-end: 4;  /*(9)*/
+    background-color:cadetblue  /*(9)*/
+}
+
+
+/*area tanımlama 1.yolun kısayolu */
+.content7{
+    grid-column:1/3;   /*(10) tasima ornegi*/
+    grid-row:3/5
+}
+
+/*2.yol span => tane*/
+
+.content6{
+ grid-column: 3/span 2; /*3 ten basla 2 column git demek */
+}

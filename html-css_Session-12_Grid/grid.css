@@ -1,0 +1,10 @@
+.container{
+    display: grid;  /*(1) */
+    /*burada verilen cizgileri, beyaz kagidin altina konmus kareli kagit olarak dusunebliriz.birlestirmeler yapilsa da o cizgiler gitmez.*/
+    grid-template-columns:100px 300px 200px ; /*buraya ne kadar column istiyorsak o kadar deger veriyoruz*/
+    grid-template-rows: 100px 400px 100px; /*buraya ne kadar row istiyorsak o kadar deger veriyoruz*/
+}
+.content{
+    background-color: cornflowerblue;
+    border: 2px solid black;
+}
