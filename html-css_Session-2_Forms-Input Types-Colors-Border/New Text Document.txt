@@ -1,5 +1,9 @@
 ###   HTML FORMS  ###
 
+
+chrome eklenti,
+colorzilla
+
 <body>
     <form action="">
         <h1> Sizi taniyalim </h1>
@@ -366,6 +370,9 @@ TUM KOD:
             <option value="baklava">balava</option>
             <option value="kadayif">kadayif</option>
         </select>
+
+
+
 
         </div>
 

@@ -134,6 +134,9 @@ images
 <img src="internet source u" alt="resim cikmazsa yazacak yazi" width="200px" >
 
 
+inline element-block element farki onemli.
+
+
 
 tables
 
@@ -185,6 +188,12 @@ dosya indirme linnki yapmak
 <!-- sayfaya kucultulmus ekran koymak icin -->
 
 <iframe src="buraya koymak istedigin site linkini yaz" frameborder="0" width="ekranin yuzde kaci olsun buraya yaz"></iframe>
+
+
+
+youtube veya bask a bir siteden video eklemek icin,
+youtube> videonun ustune gel>saga tikla > copy embed code > html sayfana yapistir.
+
 
 -CSS-
 
