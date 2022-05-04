@@ -1,0 +1,5 @@
+1-live server
+2-lorem ipsum
+3-html snippets
+4-prettier
+5-emmet.io/abbrevations/syntax

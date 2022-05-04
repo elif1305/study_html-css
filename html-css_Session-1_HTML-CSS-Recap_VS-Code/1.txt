@@ -25,6 +25,8 @@ head>
 
 -BODY KISMINDA SIK KULLANILANLAR-
 
+- baska meta tagleri de var , arasirip bakablirsin.
+
 CTRL + /  --> yorum yapmak icin 
 
 
