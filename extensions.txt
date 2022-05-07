@@ -3,3 +3,6 @@
 3-html snippets
 4-prettier
 5-emmet.io/abbrevations/syntax
+6-WhatFont - chrome eklentisi(fontu bulmak icin)
+7- font ninja - chrome eklentisi (fontu bulmak icin)
+7- google fonts
