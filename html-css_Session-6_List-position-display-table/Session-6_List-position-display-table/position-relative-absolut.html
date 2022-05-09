@@ -42,5 +42,24 @@
     <div class="box1">box1</div>
     <div class="box2">box2</div>
     <div class="box3">box3</div>
+
+
+    <!-- 
+        static : defaoult degerdir. ozellikle position : static degeri vermeye gerek yoktur.
+
+       elemanlar bagimsiz ise yani parent-chld durumu yoksa:
+        relative : bulundugu konuma gore , verilen degerlere gore konumunu degistirir.
+        absolut : browser in 0 a 0 noktasina gore konum alir.
+
+        elemanlarda parent-child durumu varsa:
+        relative ve absolut icinde bulundugu parent elemaana gore davranir.
+        absolut kullanmak icin kapsayici parenta postion verilmiesi gerekiyor.(static kalmamamsi gerekiyor). 
+        eger parentta position ozelliigi verilmemisse bir ustteki parenta cikar.  
+    
+            fixed : istenilen seyi sabitler, konum belirtmeye gerek yoktur, ama kaymalar olablir.
+
+            sticky : positon a sticky verdikten sonra konumda verilmeli kesinlikle.
+    
+    -->
 </body>
 </html>
