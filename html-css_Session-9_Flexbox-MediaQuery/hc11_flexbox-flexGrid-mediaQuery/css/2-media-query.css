@@ -1,0 +1,79 @@
+@import 'theme.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--ff-monteserrat);
+  font-weight: 500;
+}
+
+body {
+  background-color: var(--mavi-9);
+  color: var(--siyah);
+  margin: 1rem;
+}
+
+h1 {
+  background-color: var(--koyu-kırmızı);
+  width: 20rem;
+  padding: 0.3rem;
+  border: 1px solid black;
+  border-radius: 4rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.header {
+  background-color: var(--koyu-yeşil);
+  padding: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  background-color: var(--gri-3);
+}
+.navbar a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--beyaz);
+  padding: 0.8rem 1rem;
+}
+
+.navbar a:hover {
+  background-color: var(--gri-7);
+  color: var(--siyah);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.col {
+  padding: 1rem;
+}
+
+.fs {
+  width: 35%;
+  background-color: var(--gri-5);
+}
+.aws {
+  width: 20%;
+  background-color: var(--gri-6);
+}
+
+.ds {
+  width: 30%;
+  background-color: var(--gri-7);
+}
+
+.cms {
+  width: 15%;
+  background-color: var(--gri-8);
+}
