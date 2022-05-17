@@ -1,0 +1,20 @@
+.container {
+  background-color: yellowgreen;
+  display: flex;
+  /*! Elemanların diziliş yönü : column, row, row-reverse, column-reverse*/
+  flex-direction: row;
+
+  /*? sıkıştırma veya alt satıra geçebilme:flex-wrap: wrap, nowrap, wrap-reverse*/
+  flex-wrap: nowrap;
+
+  /*! Yatay Hizalama: Justify-center
+  /** flex-start, flex-end,center, space-around,space-evenly, space-between*/
+  justify-content: space-evenly;
+}
+
+.container div {
+  width: 5rem;
+  height: 5rem;
+  background-color: violet;
+  margin: 1rem;
+}

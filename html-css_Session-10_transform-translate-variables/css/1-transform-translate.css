@@ -1,0 +1,80 @@
+.yazi {
+  text-align: center;
+  font-size: 2rem;
+  width: 50vw;
+  margin: 2rem auto;
+}
+
+/************ ROTATE **************/
+.yazi1 {
+  background-color: aqua;
+  transform: rotateX(180deg);
+  /*! 90 ve 270 derecelerde yazılar tam dik olduklarından ve 3-boyutlu olarak bakamadığımız için gözükmezler */
+}
+.yazi2 {
+  background-color: hotpink;
+  transform: rotateY(180deg);
+}
+.yazi3 {
+  /*? rotate, Elementi saat yönünde ya da tersi istikamette döndürür. */
+  background-color: tomato;
+  /* transform: rotate(45deg); */
+  transform: rotate(-45deg);
+}
+
+/*************** SCALE ************/
+.yazi4 {
+  background-color: violet;
+}
+.yazi4:hover {
+  transform: scaleX(2) scaleY(3);
+}
+
+.yazi5 {
+  background-color: yellowgreen;
+}
+.yazi5:hover {
+  /* transform: scale(2, 3); */
+  transform: scale(1.05); /*!her iki eksende %5 büyüme olur*/
+}
+
+/*************** TRANSLATE ************/
+.translate {
+  background-color: lightcoral;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  color: white;
+  transition: transform 1s;
+}
+.x:hover {
+  transform: translateX(50px);
+}
+
+.y:hover {
+  transform: translateY(50px);
+}
+
+.xy:hover {
+  transform: translate(50px, 50px);
+}
+
+.transition-div {
+  text-align: center;
+}
+.transition-btn {
+  width: 5rem;
+  padding: 1rem;
+  background-color: lightgreen;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  /* transition: background-color 1s, color 0.5s; */
+  transition: all 0.5s;
+  /*!Tüm property'leri izlemek için all kelimlesi kullanulaiblir*/
+}
+
+.transition-btn:hover {
+  background-color: darkgreen;
+  color: white;
+}
