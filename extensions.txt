@@ -10,3 +10,5 @@
 9- BEM - http://getbem.com/
 10 - Page Ruler - chrome eklentisi
   https://mybrowseraddon.com/page-ruler.html?v=0.1.1&type=install
+11- https://getcssscan.com/css-box-shadow-examples
+12 -  https://color.adobe.com/create/color-wheel
