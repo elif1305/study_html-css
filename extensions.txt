@@ -8,3 +8,5 @@
 7- google fonts
 8- css viewer - chrome eklentisi
 9- BEM - http://getbem.com/
+10 - Page Ruler - chrome eklentisi
+  https://mybrowseraddon.com/page-ruler.html?v=0.1.1&type=install

@@ -45,6 +45,7 @@ h1 {
 .navbar a:hover {
   background-color: var(--gri-7);
   color: var(--siyah);
+  text-align: center;
 }
 
 .row {
@@ -76,4 +77,38 @@ h1 {
 .cms {
   width: 15%;
   background-color: var(--gri-8);
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: var(--açık-kırmızı);
+    color: var(--beyaz);
+  }
+  .col {
+    width: 50%;
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: var(--mor-1);
+    color: var(--beyaz);
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header {
+    display: none;
+  }
+  .col {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .navbar a {
+    width: 100%;
+    text-align: center;
+  }
 }
