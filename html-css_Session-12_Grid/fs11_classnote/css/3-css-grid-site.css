@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 200px 10vh calc(100vh - (200px + 20vh)) 10vh;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+header {
+  grid-column: span 12;
+  background-image: url(https://cdn.pixabay.com/photo/2016/05/11/13/20/keyboard-1385706_960_720.jpg);
+  background-size: cover;
+}
+
+nav {
+  grid-column: span 12;
+  background-color: lightskyblue;
+}
+aside {
+  grid-column: span 3;
+  background-color: lightyellow;
+}
+main {
+  grid-column: span 9;
+  background-color: tomato;
+}
+footer {
+  grid-column: span 12;
+  background-color: turquoise;
+}

@@ -2,3 +2,37 @@
   box-sizing: border-box;
   margin: 0;
 }
+.container {
+  display: grid;
+  /*!Sırasıyla 150px, 50vw ve 150px'lik 3 adet sütun tanımlama*/
+  grid-template-columns: 150px 50vw 150px;
+
+  /*! Sırasıyla 100px, 500px,20vh ve 3rem'lik yüksekliğe sahip 4 adet satır tanımla (4x3 Grid)*/
+  grid-template-rows: 100px 500px 20vh 3rem;
+
+  /*! Grid'i sayfada yatay hizalamak için*/
+  justify-content: center; /*?flex-end, flex-start, space-between vb.*/
+
+  /*! Grid'i sayfada dikey hizalamak için*/
+  /* align-items: center; */
+  text-align: center;
+}
+
+.content {
+  border: 1px solid red;
+  background-color: lightcyan;
+
+  /*! Grid Container içerisindeki item'lara Flex özelliği kazandırılabilir.Böylece item'ların içerisindeki content'lerin yatay ve dikey hizalaması yapılabilir. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.content1 {
+  background-image: url(https://cdn.pixabay.com/photo/2022/05/10/11/12/tree-7186835__480.jpg);
+  background-size: cover;
+}
+.content9 {
+  background-color: lightpink;
+}
