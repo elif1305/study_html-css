@@ -7,8 +7,27 @@
 7- font ninja - chrome eklentisi (fontu bulmak icin)
 7- google fonts
 8- css viewer - chrome eklentisi
-9- BEM - http://getbem.com/
+9- BEM - http://getbem.com
 10 - Page Ruler - chrome eklentisi
   https://mybrowseraddon.com/page-ruler.html?v=0.1.1&type=install
 11- https://getcssscan.com/css-box-shadow-examples
 12 -  https://color.adobe.com/create/color-wheel
+13- https://fontawesome.com
+14- live sass compiler
+15 - w3school
+16- https://heroicons.com
+17 - https://boxicons.com/?query=log
+18- https://icons8.com
+19 - https://git-school.github.io/visualizing-git
+20 - readme.md icin :
+banner maker ; https://banner.godori.dev
+badge : https://shields.io
+https://carbon.now.sh
+21 - gif yapmak icin program ; https://www.screentogif.com
+22 - https://gist.github.com/rxaviers/7360908
+23- https://towardsdatascience.com/enrich-your-github-profile-with-these-tips-272fa1eafe05
+24 - https://rahuldkjain.github.io/gh-profile-readme-generator/
+25- https://www.youtube.com/watch?v=G-EGDH50hGE  = readme file yapmak icin
+26- https://chrome.google.com/webstore/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg/related
+html tree generater
+27- https://developer.mozilla.org/en-US/docs/Web/Events
