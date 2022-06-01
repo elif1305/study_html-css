@@ -31,3 +31,4 @@ https://carbon.now.sh
 26- https://chrome.google.com/webstore/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg/related
 html tree generater
 27- https://developer.mozilla.org/en-US/docs/Web/Events
+28- https://www.resizepixel.com/tr/resize-image/
