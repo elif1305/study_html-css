@@ -32,3 +32,6 @@ https://carbon.now.sh
 html tree generater
 27- https://developer.mozilla.org/en-US/docs/Web/Events
 28- https://www.resizepixel.com/tr/resize-image/
+
+29-  A Guide to the 20 Best VSCode Extensions for Frontend Developers
+https://javascript.plainenglish.io/a-guide-to-the-20-best-vscode-extensions-for-frontend-developers-f75a5d716091

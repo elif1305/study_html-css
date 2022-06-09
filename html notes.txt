@@ -30,4 +30,6 @@ margin : 0
 
 => margin : auto
 
-=>
+=> display : flex yaptiginda itemlar arasi boslugu gap ile ver.
+
+=> user-select : none 
