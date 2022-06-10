@@ -33,3 +33,17 @@ margin : 0
 => display : flex yaptiginda itemlar arasi boslugu gap ile ver.
 
 => user-select : none , kullanici secimini kapatmak icin
+
+=> span : inline element
+    p : block elemen  tasarimlarda bunu dusunerek kullan.
+
+
+=> parallax efect in calismasi icin : image a min-height : 100%  ver, html ve body ye height:100% ver.
+
+ 
+=> text-align kullanmak istiyorsan spesifik bir width vermen gerekiyor ki ona gore yapsin.
+
+=> outline : 0.4rem inset red    inset: kalinlik ice dogru mu disa dogru mu ayari
+   outline-offset : 0,2rem   (border ve outline arasindaki mesafe)
+
+=>
