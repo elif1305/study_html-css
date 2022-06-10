@@ -32,4 +32,4 @@ margin : 0
 
 => display : flex yaptiginda itemlar arasi boslugu gap ile ver.
 
-=> user-select : none 
+=> user-select : none , kullanici secimini kapatmak icin
