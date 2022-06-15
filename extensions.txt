@@ -43,3 +43,7 @@ https://www.postman.com/downloads/
 31-https://app.getpostman.com/join-team?invite_code=98ffbf0b703104b79d0c3ccb62cc74c8
 
 32- https://reqres.in/
+
+33- https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa/related?hl=tr
+
+34-  https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
