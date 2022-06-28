@@ -49,3 +49,12 @@ https://www.postman.com/downloads/
 34-  https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 35- https://babeljs.io/repl#?browsers=defaults%2C%20not%20ie%2011%2C%20not%20ie_mob%2011&build=&builtIns=false&corejs=3.21&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=env%2Creact%2Cstage-2&prettier=false&targets=&version=7.18.5&externalPlugins=&assumptions=%7B%7D
+
+36- https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en
+
+37- react icin:
+ES7+ React/Redux/React-Native snippets -> vscode extension
+
+38 - https://color.adobe.com/tr/explore
+
+39- https://getcssscan.com/css-box-shadow-examples
