@@ -58,3 +58,9 @@ ES7+ React/Redux/React-Native snippets -> vscode extension
 38 - https://color.adobe.com/tr/explore
 
 39- https://getcssscan.com/css-box-shadow-examples
+
+40 - react - html-to-jsx
+
+https://transform.tools/html-to-jsx
+
+41- https://react-icons.github.io/react-icons/
