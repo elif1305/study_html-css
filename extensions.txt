@@ -64,3 +64,15 @@ ES7+ React/Redux/React-Native snippets -> vscode extension
 https://transform.tools/html-to-jsx
 
 41- https://react-icons.github.io/react-icons/
+
+42- deploying icin:
+
+https://www.netlify.com/
+
+https://vercel.com/
+
+43 - react - https://styled-components.com/docs/basics
+
+44- react - https://marketplace.visualstudio.com/items?itemName=styled-components.vscode-styled-components
+
+45 - react - vs code - styled snippets
