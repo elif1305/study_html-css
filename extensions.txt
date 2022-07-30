@@ -82,3 +82,7 @@ https://vercel.com/
 47- https://mui.com/material-ui/getting-started/overview/
 
 48 https://firebase.google.com/
+
+49 - lightshot - ekran gorunstusu , video almak icin
+
+50 -flameshot (daha iyi)
