@@ -86,3 +86,5 @@ https://vercel.com/
 49 - lightshot - ekran gorunstusu , video almak icin
 
 50 -flameshot (daha iyi)
+
+51- webdevsimplified
