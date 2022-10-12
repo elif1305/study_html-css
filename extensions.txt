@@ -88,3 +88,5 @@ https://vercel.com/
 50 -flameshot (daha iyi)
 
 51- webdevsimplified
+
+52 - https://caniuse.com/
