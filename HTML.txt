@@ -1,0 +1,121 @@
+####  What is the HTML
+
+-> HTML stands for HyperText Markup Language.
+
+-> HTML is a markup language used to create documents on the web. 
+It describes the structure and layout of a web page.
+
+-> HTML was originally developed by Tim Berners-Lee while at CERN.
+
+## HTML Page Structure
+
+-> The <head> element contains metadata about the page. 
+HTML metadata is data about the HTML document and metadata is not displayed. 
+Metadata typically defines the document title, character set, styles, scripts,
+and other meta information.
+
+-> The <body> element indicates what should appear in the main browser window.
+
+A Simple HTML Document
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <h1>This is a Heading</h1>
+        <p>This is a paragraph.</p>
+        <!-- This is a comment-->
+        <img src="https://JJJHJGJH" alt="APPLE" width="100%" height="auto" border="2px">
+        <a href="http://google.com/" target="_blank">Welcome GOOGLE</a>
+        <a href="http://google.com/" target="_blank"><img src="https://drive.google.com/open?id=1u4ycVa0PK" alt="A lighthouse" width="50%" height="auto"></a>
+</body>
+</html>
+
+-> The alt attribute is used to provide an alternate text for an image in case
+ the image fails to load on a web page or it is not supported by the browser, etc.
+Moreover, Visually impaired users browse the web via screen reading software. 
+the screen reading software can read the text inside an alt attribute for impaired users.
+We should add alt attribute to the image tag just like the src attribute.
+
+
+interview
+
+What do you mean by Tags?
+In HTML page content is placed between the Tags which are basically responsible 
+for the formatting of the page. Tags are written between less than symbol (<) and 
+greater than (>) symbol.
+
+What do you mean by HTML attribute?
+Additional information given with the elements is known as an attribute. For Eg
+<font size=”10” color=”red”>
+
+What is SPAN tag is used for?
+Span is used for formatting elements in the SPAN block. It is used to select inline text.
+
+What is the XHTML?
+XHTML means Extensible Hypertext Markup Language, which is basically
+ a part of Family of XML markup language. It usually extends the most popularly 
+used HTML i.e. Hypertext Markup Language, the pages in which the web pages are formulated.
+
+What does DOCTYPE mean?
+DOCTYPE or Document Type Declaration is a type of instruction which usually works in
+association with particular SGML or XML documents basically. Let us take an example 
+to understand it more thoroughly, for example, A Web page with a document type 
+definition i.e. DTD is the best to understand. In a well serialized and a proper form of 
+the document, It manifests and also the contribution of it is a lot as a short string of
+ markup that usually conforms to a particular syntax.
+
+What is Semantic Elements?
+Semantic elements expresses its meaning for the web browser and developer.
+Eg: Header , Footer
+
+What are the key differences between HTML and HTML5?
+
+HTML5 has made several steps forward compared to its previous versions. Notable changes include:
+HTML5 supports video, graphics, and audio, whereas HTML only supports them through third-party extensions
+HTML5 is mobile-friendly, whereas HTML is not
+HTML5 is compatible with all major web browsers, whereas HTML is not
+HTML5 offers several options for local storage, whereas HTML only offers cookies
+HTML5 supports multi-threading, whereas HTML operates only in one thread
+
+
+What are elements in HTML5?
+Elements are components of HTML5 code that instruct the web browser how to 
+structure and interpret the HTML5 document. Typically, they encompass an 
+opening tag, a closing tag, and specified content between the opening and 
+closing tags, depending on the type of tag used.
+
+5. What are attributes in HTML5?
+Attributes are special properties or characteristics used within an element 
+to modify its behavior. For example, attributes can be used to specify the
+ dimensions or positioning values of an image. Attributes are specified within 
+the opening tag and must be enclosed in quotation marks.
+
+What are the key HTML5 page structure elements?
+The most important HTML5 structure elements are:
+
+<header>, containing the header or top of the page
+<footer>, containing the footer or bottom of the page
+<section>, containing one section that is thematically similar to other sections
+<article>, containing standalone content
+<nav>, containing the navigation functionality of the page
+<aside>, containing secondary content
+
+What types of graphics are supported by HTML5?
+Unlike previous versions, HTML5 offers inbuilt graphics features. 
+The two types of graphics supported by HTML5 are:
+
+SVG (Scalable Vector Graphics), used to create vector-based graphics, such as diagrams and icons
+Canvas, used to draw graphics, such as shapes
+
+How can a copyright symbol be added to the webpage using HTML5?
+The ‘&copy’ code is used to generate the copyright symbol (©). 
+As a best practice, it should be accompanied by a year and the name of the organization.
+To include copyright information in the footer of a web page, the code would look like this:
+<footer> <small>&copy; Copyright Date, Organization Name</small> </footer> 
+
+What are the different types of storage in HTML5
+HTML5 supports two types of web storage. These are:
+sessionStorage: temporary storage available for the duration of the page session
+localStorage: permanent storage available until data is deleted by the user
